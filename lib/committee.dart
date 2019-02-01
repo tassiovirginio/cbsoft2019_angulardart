@@ -9,5 +9,5 @@ import 'src/route_paths.dart';
   directives: [Page,Card]
 )
 class Committee {
-  String heroUrl() => RoutePaths.committee.toUrl();
+  String url() => RoutePaths.committee.toUrl();
 }

@@ -8,5 +8,5 @@ import 'src/route_paths.dart';
   directives: [Page]
 )
 class CBSoft {
-  String heroUrl() => RoutePaths.cbsoft.toUrl();
+  String url() => RoutePaths.cbsoft.toUrl();
 }

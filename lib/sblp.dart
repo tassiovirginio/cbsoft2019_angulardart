@@ -9,5 +9,5 @@ import 'src/card.dart';
   directives: [Page,Card]
 )
 class Sblp {
-  String heroUrl() => RoutePaths.sbes.toUrl();
+  String url() => RoutePaths.sblp.toUrl();
 }

@@ -8,5 +8,5 @@ import 'src/route_paths.dart';
   directives: [Page]
 )
 class Sbes {
-  String heroUrl() => RoutePaths.sbes.toUrl();
+  String url() => RoutePaths.sbes.toUrl();
 }
