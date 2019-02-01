@@ -18,7 +18,7 @@ import 'route_paths.dart';
 class Page {
 
   @Input()
-  var language;
+  String language;
 
   var _title;
 
@@ -27,7 +27,7 @@ class Page {
 
 
   bool visible(){
-    return AppComponent.language == language;
+    return language.contains(AppComponent.language);
   }
 
   get title {

@@ -4,6 +4,7 @@ const idParam = 'id';
 
 class RoutePaths {
   static final cbsoft = RoutePath(path: 'cbsoft');
+  static final committee = RoutePath(path: 'committee');
   static final sbes = RoutePath(path: 'sbes');
 }
 

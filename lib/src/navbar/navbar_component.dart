@@ -5,6 +5,8 @@ import '../routes.dart';
 import '../lb.dart';
 import 'package:cbsoft/app_component.dart';
 
+import '../route_paths.dart';
+
 @Component(
   selector: 'navbar',
   templateUrl: 'navbar_component.html',
