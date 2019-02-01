@@ -1,0 +1,22 @@
+<section *ngIf="visible()" class="sample-text-area">
+    <div class="container">
+        <div class="text-justify text-black">
+            <br>
+            <section>
+                <h3 class="text-center text-black mb-25" style="font-size:5vmin;">
+                    {{title}}
+                </h3>
+            </section>
+            <hr /><br />
+            <section>
+                <div class="container">
+                    <div class="text-justify text-black">
+                        <p>
+                            <ng-content></ng-content>
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</section>
