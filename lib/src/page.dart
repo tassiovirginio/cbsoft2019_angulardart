@@ -31,7 +31,7 @@ class Page {
   }
 
   get title {
-    if(AppComponent.language == language){
+    if(language.contains(AppComponent.language)){
       return _title;
     }else{
       return "";

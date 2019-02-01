@@ -6,6 +6,7 @@ class RoutePaths {
   static final cbsoft = RoutePath(path: 'cbsoft');
   static final committee = RoutePath(path: 'committee');
   static final sbes = RoutePath(path: 'sbes');
+  static final sblp = RoutePath(path: 'sblp');
 }
 
 int getId(Map<String, String> parameters) {

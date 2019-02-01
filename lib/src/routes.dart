@@ -4,6 +4,7 @@ import 'route_paths.dart';
 import '../cbsoft.template.dart' as cbsoft_template;
 import '../sbes.template.dart' as sbes_template;
 import '../committee.template.dart' as committee_template;
+import '../sblp.template.dart' as sblp_template;
 
 export 'route_paths.dart';
 
@@ -23,11 +24,17 @@ class Routes {
     component: sbes_template.SbesNgFactory,
   );
 
+  static final sblp = RouteDefinition(
+    routePath: RoutePaths.sblp,
+    component: sblp_template.SblpNgFactory,
+  );
+
 
   static final all = <RouteDefinition>[
     cbsoft,
     sbes,
     committee,
+    sblp,
     RouteDefinition.redirect(
       path: '',
       redirectTo: RoutePaths.cbsoft.toUrl(),
