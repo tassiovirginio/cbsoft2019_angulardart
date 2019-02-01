@@ -13,7 +13,7 @@ import 'src/routes.dart';
   selector: 'my-app',
   template: '''
     <carousel></carousel>
-    <navbar [language]="language"></navbar>
+    <navbar></navbar>
     <router-outlet [routes]="Routes.all"></router-outlet>
     <br><br>
     <organization [language]="language"></organization>

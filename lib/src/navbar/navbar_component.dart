@@ -3,32 +3,34 @@ import 'package:angular_router/angular_router.dart';
 
 import '../routes.dart';
 import '../lb.dart';
+import 'package:cbsoft/app_component.dart';
 
 @Component(
   selector: 'navbar',
   templateUrl: 'navbar_component.html',
-  directives: [
-    routerDirectives,Lb
-  ],
+  directives: [routerDirectives, Lb],
   exports: [RoutePaths, Routes],
 )
-class NavbarComponent {
-  @Input()
-  var language;
+class NavbarComponent implements OnInit {
+  var img;
 
-  get conference_banquet {
-    if (language == "pt") {
-      return "Banquete de Conferências";
+  mudarIdioma() {
+    if (AppComponent.language == "en") {
+      AppComponent.language = "pt";
+      img = "https://cdn.countryflags.com/thumbs/united-states-of-america/flag-800.png";
     } else {
-      return "Conference Banquet";
+      AppComponent.language = "en";
+      img = "https://cdn.countryflags.com/thumbs/brazil/flag-400.png";
     }
   }
 
-  get venue_location {
-    if (language == "pt") {
-      return "Local & Localização";
+  @override
+  void ngOnInit() {
+    if (AppComponent.language == "en") {
+      img = "https://cdn.countryflags.com/thumbs/brazil/flag-400.png";
     } else {
-      return "Venue & Location";
+      img =
+          "https://cdn.countryflags.com/thumbs/united-states-of-america/flag-800.png";
     }
   }
 }
