@@ -92,7 +92,7 @@
                     <font style="color: red; font-weight: bold;">XIII</font> SBCARS
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="sbcars.html">Home SBCARS</a>
+                    <a class="dropdown-item" [routerLink]="RoutePaths.sbcars.toUrl()">Home SBCARS</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Best Paper Award and Special Issue</a>
                     <a class="dropdown-item" href="#">Call for Papers</a>
@@ -109,7 +109,7 @@
                     <font style="color: red; font-weight: bold;">IV</font> SAST
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" href="sast.html">Home SAST</a>
+                    <a class="dropdown-item" [routerLink]="RoutePaths.sast.toUrl()">Home SAST</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Call for Papers</a>
                     <a class="dropdown-item" href="#">Keynote Speakers</a>
@@ -130,13 +130,13 @@
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link" href="venue_location.html">
+                <a class="nav-link" [routerLink]="RoutePaths.venuelocation.toUrl()">
                     <lb pt="Local & Localização" en="Venue & Location"></lb>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="conference_banquet.html">
-                    <lb pt="Banquete de Conferências" en="Conference Banquet"></lb>>
+                <a class="nav-link" [routerLink]="RoutePaths.conferencebanquet.toUrl()">
+                    <lb pt="Banquete de Conferências" en="Conference Banquet"></lb>
                 </a>
             </li>
             <!-- <li class="nav-item">
