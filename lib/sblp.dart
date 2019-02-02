@@ -1,7 +1,7 @@
 import 'package:angular/angular.dart';
-import 'src/route_paths.dart';
-import 'src/page.dart';
-import 'src/card.dart';
+import 'package:cbsoft/src/route_paths.dart';
+import 'package:cbsoft/src/components/page.dart';
+import 'package:cbsoft/src/components/card.dart';
 
 @Component(
   selector: 'sblp',

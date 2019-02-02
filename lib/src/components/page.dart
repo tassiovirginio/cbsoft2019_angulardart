@@ -1,13 +1,11 @@
 import 'package:angular/angular.dart';
-
-import 'carousel/carousel_component.dart';
-import 'navbar/navbar_component.dart';
-import 'footer/footer_component.dart';
-import 'codeofconduct/codeofconduct_component.dart';
-import 'organization/organization_component.dart';
-import '../app_component.dart';
-
-import 'route_paths.dart';
+import 'package:cbsoft/src/carousel/carousel_component.dart';
+import 'package:cbsoft/src/navbar/navbar_component.dart';
+import 'package:cbsoft/src/footer/footer_component.dart';
+import 'package:cbsoft/src/codeofconduct/codeofconduct_component.dart';
+import 'package:cbsoft/src/organization/organization_component.dart';
+import 'package:cbsoft/app_component.dart';
+import 'package:cbsoft/src/route_paths.dart';
 
 @Component(
   selector: 'page',

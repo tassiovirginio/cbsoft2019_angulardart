@@ -1,11 +1,10 @@
 import 'package:angular/angular.dart';
 import 'package:angular_router/angular_router.dart';
 
-import '../routes.dart';
-import '../lb.dart';
 import 'package:cbsoft/app_component.dart';
-
-import '../route_paths.dart';
+import 'package:cbsoft/src/components/lb.dart';
+import 'package:cbsoft/src/routes.dart';
+import 'package:cbsoft/src/route_paths.dart';
 
 @Component(
   selector: 'navbar',

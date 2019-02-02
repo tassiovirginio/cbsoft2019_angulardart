@@ -1,19 +1,19 @@
+import 'package:angular/angular.dart';
 import 'package:angular_router/angular_router.dart';
 
-import 'route_paths.dart';
-import '../cbsoft.template.dart' as cbsoft_template;
-import '../sbes.template.dart' as sbes_template;
-import '../committee.template.dart' as committee_template;
-import '../sblp.template.dart' as sblp_template;
-import '../sbcars.template.dart' as sbcars_template;
-import '../sast.template.dart' as sast_template;
-import '../venuelocation.template.dart' as venuelocation_template;
-import '../conferencebanquet.template.dart' as conferencebanquet_template;
+import 'package:cbsoft/src/route_paths.dart';
+import 'package:cbsoft/cbsoft/cbsoft.template.dart' as cbsoft_template;
+import 'package:cbsoft/cbsoft/committee.template.dart' as committee_template;
+import 'package:cbsoft/cbsoft/venuelocation.template.dart' as venuelocation_template;
+import 'package:cbsoft/cbsoft/conferencebanquet.template.dart' as conferencebanquet_template; 
+import 'package:cbsoft/cbsoft/registration.template.dart' as registration_template;
+import 'package:cbsoft/cbsoft/wtdsoft.template.dart' as wtdsoft_template;
+import 'package:cbsoft/sbes.template.dart' as sbes_template;
+import 'package:cbsoft/sblp.template.dart' as sblp_template;
+import 'package:cbsoft/sbcars.template.dart' as sbcars_template;
+import 'package:cbsoft/sast.template.dart' as sast_template;
 
-
-
-export 'route_paths.dart';
-
+export 'package:cbsoft/src/route_paths.dart';
 
 class Routes {
 
@@ -57,6 +57,16 @@ class Routes {
     component: conferencebanquet_template.ConferencebanquetNgFactory,
   );
 
+  static final wtdsoft = RouteDefinition(
+    routePath: RoutePaths.wtdsoft,
+    component: wtdsoft_template.WtdsoftNgFactory,
+  );
+
+  static final registration = RouteDefinition(
+    routePath: RoutePaths.registration,
+    component: registration_template.RegistrationNgFactory,
+  );
+
 
   static final all = <RouteDefinition>[
     cbsoft,
@@ -67,6 +77,8 @@ class Routes {
     sast,
     venuelocation,
     conferencebanquet,
+    wtdsoft,
+    registration,
     RouteDefinition.redirect(
       path: '',
       redirectTo: RoutePaths.cbsoft.toUrl(),

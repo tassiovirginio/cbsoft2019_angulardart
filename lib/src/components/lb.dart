@@ -1,5 +1,5 @@
 import 'package:angular/angular.dart';
-import '../app_component.dart';
+import 'package:cbsoft/app_component.dart';
 
 @Component(selector: 'lb', template: '''
     <label>{{texto}}</label>
