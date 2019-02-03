@@ -13,7 +13,19 @@ class RoutePaths {
   static final conferencebanquet = RoutePath(path: 'conferencebanquet');
   static final wtdsoft = RoutePath(path: 'wtdsoft');
   static final registration = RoutePath(path: 'registration');
+
   
+  static final conferenceproceedings = RoutePath(path: 'conferenceproceedings');
+  static final conferenceprogram = RoutePath(path: 'conferenceprogram');
+  static final industrytrack = RoutePath(path: 'industrytrack');
+  static final previouseditions = RoutePath(path: 'previouseditions');
+  static final promotionalmaterial = RoutePath(path: 'promotionalmaterial');
+  
+  static final shortcourses = RoutePath(path: 'shortcourses');
+  static final toolssession = RoutePath(path: 'toolssession');
+  static final tutorials = RoutePath(path: 'tutorials');
+  static final workshops = RoutePath(path: 'workshops');
+
   
 }
 
