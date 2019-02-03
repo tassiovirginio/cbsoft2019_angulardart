@@ -19,6 +19,8 @@ import 'src/routes.dart';
     <organization [language]="language"></organization>
     <br><br>
     <codeofconduct [language]="language" ></codeofconduct>
+    <br><br>
+    <footer></footer>
   ''',
   directives: [routerDirectives, CarouselComponent,NavbarComponent,FooterComponent,CodeofconductComponent,OrganizationComponent],
   exports: [RoutePaths, Routes],
