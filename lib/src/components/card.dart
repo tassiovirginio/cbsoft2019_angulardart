@@ -44,5 +44,5 @@ class Card {
 
   @Input()
   var site;
-
+  
 }
