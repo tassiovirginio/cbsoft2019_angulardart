@@ -21,10 +21,20 @@ import 'package:cbsoft/cbsoft/toolssession.template.dart' as toolssession_templa
 import 'package:cbsoft/cbsoft/tutorials.template.dart' as tutorials_template;
 import 'package:cbsoft/cbsoft/workshops.template.dart' as workshops_template;
 
-import 'package:cbsoft/sbes.template.dart' as sbes_template;
-import 'package:cbsoft/sblp.template.dart' as sblp_template;
 import 'package:cbsoft/sbcars.template.dart' as sbcars_template;
 import 'package:cbsoft/sast.template.dart' as sast_template;
+
+import 'package:cbsoft/sblp/sblp.template.dart' as sblp_template;
+import 'package:cbsoft/sblp/sblpkeynote.template.dart' as sblpkeynote_template;
+import 'package:cbsoft/sblp/sblpprogramcommittee.template.dart' as sblpprogramcommittee_template;
+
+import 'package:cbsoft/sbes/sbes.template.dart' as sbes_template;
+import 'package:cbsoft/sbes/sbesresearchtrack.template.dart' as sbesresearchtrack_template;
+import 'package:cbsoft/sbes/sbesInsightfulideastrack.template.dart' as sbesInsightfulideastrack_template;
+import 'package:cbsoft/sbes/sbeseducationtrack.template.dart' as sbeseducationtrack_template;
+
+
+
 
 export 'package:cbsoft/src/route_paths.dart';
 
@@ -40,14 +50,36 @@ class Routes {
     component: committee_template.CommitteeNgFactory,
   );
 
+//--------- SBES ----------------------
   static final sbes = RouteDefinition(
     routePath: RoutePaths.sbes,
     component: sbes_template.SbesNgFactory,
   );
+  static final sbesresearchtrack = RouteDefinition(
+    routePath: RoutePaths.sbesresearchtrack,
+    component: sbesresearchtrack_template.SbesresearchtrackNgFactory,
+  );
+  static final sbesInsightfulideastrack = RouteDefinition(
+    routePath: RoutePaths.sbesInsightfulideastrack,
+    component: sbesInsightfulideastrack_template.SbesInsightfulideastrackNgFactory,
+  );
+  static final sbeseducationtrack = RouteDefinition(
+    routePath: RoutePaths.sbeseducationtrack,
+    component: sbeseducationtrack_template.SbeseducationtrackNgFactory,
+  );
 
+//------- SBLP -----------------
   static final sblp = RouteDefinition(
     routePath: RoutePaths.sblp,
     component: sblp_template.SblpNgFactory,
+  );
+  static final sblpkeynote = RouteDefinition(
+    routePath: RoutePaths.sblpkeynote,
+    component: sblpkeynote_template.SblpkeynoteNgFactory,
+  );
+  static final sblpprogramcommittee = RouteDefinition(
+    routePath: RoutePaths.sblpprogramcommittee,
+    component: sblpprogramcommittee_template.SblpprogramcommitteeNgFactory,
   );
 
   static final sbcars = RouteDefinition(
@@ -128,8 +160,13 @@ class Routes {
   static final all = <RouteDefinition>[
     cbsoft,
     sbes,
+    sbesresearchtrack,
+    sbesInsightfulideastrack,
+    sbeseducationtrack,
     committee,
     sblp,
+    sblpkeynote,
+    sblpprogramcommittee,
     sbcars,
     sast,
     venuelocation,

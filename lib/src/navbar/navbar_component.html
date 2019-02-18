@@ -11,9 +11,11 @@
                     <font style="color: red; font-weight: bold;">X</font> CBSOFT
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" [routerLink]="RoutePaths.cbsoft.toUrl()">Home</a>
+                    <a class="dropdown-item" [routerLink]="RoutePaths.cbsoft.toUrl()"><lb pt="Home" en="Home"></lb></a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" [routerLink]="RoutePaths.committee.toUrl()">Organization</a>
+                    <a class="dropdown-item" [routerLink]="RoutePaths.committee.toUrl()">
+                        <lb pt="Organização" en="Organization"></lb>
+                    </a>
                     <a class="dropdown-item" [routerLink]="RoutePaths.registration.toUrl()">
                         <lb pt="Inscrição" en="Registration"></lb>
                     </a>
@@ -32,11 +34,15 @@
                     <a class="dropdown-item" [routerLink]="RoutePaths.shortcourses.toUrl()">
                         <lb pt="Cursos" en="Short courses"></lb>
                     </a>
-                    <a class="dropdown-item" [routerLink]="RoutePaths.workshops.toUrl()">Workshops</a>
+                    <a class="dropdown-item" [routerLink]="RoutePaths.workshops.toUrl()">
+                        <lb pt="Workshops" en="Workshops"></lb>
+                    </a>
                     <a class="dropdown-item" [routerLink]="RoutePaths.toolssession.toUrl()">
                         <lb pt="Seção de Ferramentas" en="Tools Session"></lb>
                     </a>
-                    <a class="dropdown-item" [routerLink]="RoutePaths.wtdsoft.toUrl()">WTDSoft</a>
+                    <a class="dropdown-item" [routerLink]="RoutePaths.wtdsoft.toUrl()">
+                        <lb pt="WTDSoft" en="WTDSoft"></lb>
+                    </a>
                     <a class="dropdown-item" [routerLink]="RoutePaths.previouseditions.toUrl()">
                         <lb pt="Edições Anteriores" en="Previous Editions"></lb>
                     </a>
@@ -63,35 +69,32 @@
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" [routerLink]="RoutePaths.sbes.toUrl()">Home SBES</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#sbes#research">Research Track</a>
-                    <a class="dropdown-item" href="#">Insightful Ideas & Emerging Results Track</a>
-                    <a class="dropdown-item" href="#">Education Track</a>
-                    <a class="dropdown-item" href="#">Keynotes</a>
+                    <a class="dropdown-item" [routerLink]="RoutePaths.sbesresearchtrack.toUrl()">Research Track</a>
+                    <a class="dropdown-item" [routerLink]="RoutePaths.sbesInsightfulideastrack.toUrl()">Insightful Ideas
+                        & Emerging Results Track</a>
+                    <a class="dropdown-item" [routerLink]="RoutePaths.sbeseducationtrack.toUrl()">Education Track</a>
+                    <!-- <a class="dropdown-item" href="#sbes#research">Keynotes</a> -->
                 </div>
             </li>
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
+                    aria-haspopup="false" aria-expanded="false">
                     <font style="color: red; font-weight: bold;">XXIII</font> SBLP
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" [routerLink]="RoutePaths.sblp.toUrl()">Home SBLP</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="sblp.html#submission-guidelines">Submission Guidelines</a>
-                    <a class="dropdown-item" href="sblp.html#list-of-topics">List of Topics</a>
-                    <a class="dropdown-item" href="sblp.html#publication">Publication</a>
-                    <a class="dropdown-item" href="sblp.html#important-dates">Important dates</a>
-                    <a class="dropdown-item" href="sblp.html#program-committee">Program Committee</a>
-                    <a class="dropdown-item" href="sblp.html#invited-speaker">Invited Speaker</a>
-                    <a class="dropdown-item" href="sblp.html#contact">Contact</a>
+                    <a class="dropdown-item" [routerLink]="RoutePaths.sblpkeynote.toUrl()">Keynotes</a>
+                    <a class="dropdown-item" [routerLink]="RoutePaths.sblpprogramcommittee.toUrl()">Program
+                        Committee</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link _dropdown-toggle" [routerLink]="RoutePaths.sbcars.toUrl()" id="navbarDropdown"
+                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <font style="color: red; font-weight: bold;">XIII</font> SBCARS
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" [routerLink]="RoutePaths.sbcars.toUrl()">Home SBCARS</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Best Paper Award and Special Issue</a>
@@ -101,19 +104,19 @@
                     <a class="dropdown-item" href="#">Organization</a>
                     <a class="dropdown-item" href="#">SBCARS - Program Committee</a>
                     <a class="dropdown-item" href="#">Contact</a>
-                </div>
+                </div> -->
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
+                <a class="nav-link _dropdown-toggle" [routerLink]="RoutePaths.sast.toUrl()" id="navbarDropdown"
+                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <font style="color: red; font-weight: bold;">IV</font> SAST
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" [routerLink]="RoutePaths.sast.toUrl()">Home SAST</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#">Call for Papers</a>
                     <a class="dropdown-item" href="#">Keynote Speakers</a>
-                </div>
+                </div> -->
             </li>
 
             <!-- <li class="nav-item dropdown">
@@ -134,11 +137,11 @@
                     <lb pt="Local & Localização" en="Venue & Location"></lb>
                 </a>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
                 <a class="nav-link" [routerLink]="RoutePaths.conferencebanquet.toUrl()">
                     <lb pt="Banquete de Conferências" en="Conference Banquet"></lb>
                 </a>
-            </li>
+            </li> -->
             <!-- <li class="nav-item">
                     <a class="nav-link" href="downloads.html">Downloads</a>
                 </li> -->
@@ -146,5 +149,5 @@
     </div>
 
     <img (click)="mudarIdioma()" src="{{img}}" style="height: 23px;width: 38px;position:absolute; top: 28%; right: 1%;">
-    
+
 </nav>
