@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+/* @import url(https://fonts.googleapis.com/css?family=Roboto);
 @import url(https://fonts.googleapis.com/css?family=Material+Icons);
 
 body {
@@ -9,4 +9,10 @@ body {
 
 * {
   font-family: Roboto, Helvetica, Arial, sans-serif;
+} */
+
+.scrollable-menu {
+  height: auto;
+  max-height: 450px;
+  overflow-x: hidden;
 }
