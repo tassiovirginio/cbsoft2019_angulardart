@@ -32,6 +32,11 @@ import 'package:cbsoft/sbes/sbes.template.dart' as sbes_template;
 import 'package:cbsoft/sbes/sbesresearchtrack.template.dart' as sbesresearchtrack_template;
 import 'package:cbsoft/sbes/sbesInsightfulideastrack.template.dart' as sbesInsightfulideastrack_template;
 import 'package:cbsoft/sbes/sbeseducationtrack.template.dart' as sbeseducationtrack_template;
+import 'package:cbsoft/sbes/sbeskeynotes.template.dart' as sbeskeynotes_template;
+import 'package:cbsoft/sbes/sbesposter.template.dart' as sbesposter_template;
+
+
+
 
 
 
@@ -67,6 +72,15 @@ class Routes {
     routePath: RoutePaths.sbeseducationtrack,
     component: sbeseducationtrack_template.SbeseducationtrackNgFactory,
   );
+  static final sbeskeynotes = RouteDefinition(
+    routePath: RoutePaths.sbeskeynotes,
+    component: sbeskeynotes_template.SbeskeynotesNgFactory,
+  );
+  static final sbesposter = RouteDefinition(
+    routePath: RoutePaths.sbesposter,
+    component: sbesposter_template.SbesposterNgFactory,
+  );
+  
 
 //------- SBLP -----------------
   static final sblp = RouteDefinition(
@@ -163,6 +177,8 @@ class Routes {
     sbesresearchtrack,
     sbesInsightfulideastrack,
     sbeseducationtrack,
+    sbeskeynotes,
+    sbesposter,
     committee,
     sblp,
     sblpkeynote,
