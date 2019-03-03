@@ -21,7 +21,8 @@ import 'package:cbsoft/cbsoft/toolssession.template.dart' as toolssession_templa
 import 'package:cbsoft/cbsoft/tutorials.template.dart' as tutorials_template;
 import 'package:cbsoft/cbsoft/workshops.template.dart' as workshops_template;
 
-import 'package:cbsoft/sbcars.template.dart' as sbcars_template;
+import 'package:cbsoft/sbcars/sbcars.template.dart' as sbcars_template;
+import 'package:cbsoft/sbcars/sbcarskeynotes.template.dart' as sbcarskeynotes_template;
 import 'package:cbsoft/sast.template.dart' as sast_template;
 
 import 'package:cbsoft/sblp/sblp.template.dart' as sblp_template;
@@ -99,6 +100,10 @@ class Routes {
   static final sbcars = RouteDefinition(
     routePath: RoutePaths.sbcars,
     component: sbcars_template.SbcarsNgFactory,
+  );
+  static final sbcarskeynotes = RouteDefinition(
+    routePath: RoutePaths.sbcarskeynotes,
+    component: sbcarskeynotes_template.SbcarskeynotesNgFactory,
   );
 
   static final sast = RouteDefinition(
@@ -184,6 +189,7 @@ class Routes {
     sblpkeynote,
     sblpprogramcommittee,
     sbcars,
+    sbcarskeynotes,
     sast,
     venuelocation,
     conferencebanquet,

@@ -6,6 +6,7 @@ class RoutePaths {
   static final cbsoft = RoutePath(path: 'cbsoft');
   static final committee = RoutePath(path: 'committee');
   static final sbcars = RoutePath(path: 'sbcars');
+  static final sbcarskeynotes = RoutePath(path: 'sbcarskeynotes');
   static final sast = RoutePath(path: 'sast');
   static final venuelocation = RoutePath(path: 'venuelocation');
   static final conferencebanquet = RoutePath(path: 'conferencebanquet');

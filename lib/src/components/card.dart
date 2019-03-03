@@ -14,18 +14,21 @@ import 'package:angular/angular.dart';
                         </div>
                     </div>
                     <div class="bottom">
-                        <a target="_blank" href="http://lattes.cnpq.br/{{lattes}}">
+                        <a *ngIf="!lattes.isEmpty" target="_blank" href="http://lattes.cnpq.br/{{lattes}}" >
                             <img style="height:30px;" src="assets/images/lattes.png" />
                         </a>
-                        <a target="_blank" href="mailto:{{email}}">
+                        <a *ngIf="!email.isEmpty" target="_blank" href="mailto:{{email}}">
                             <img style="height:30px;" src="assets/images/email.png" />
                         </a>
-                        <a target="_blank" href="http://{{site}}">
+                        <a *ngIf="!site.isEmpty" target="_blank" href="http://{{site}}">
                             <img style="height:30px;" src="assets/images/site.png" />
                         </a>
                     </div>
                 </div>
-  ''')
+  ''',
+  directives: [
+    coreDirectives
+  ],)
 class Card {
   @Input()
   var img;
