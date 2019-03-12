@@ -4,48 +4,65 @@ import 'package:angular_router/angular_router.dart';
 import 'package:cbsoft/src/route_paths.dart';
 import 'package:cbsoft/cbsoft/cbsoft.template.dart' as cbsoft_template;
 import 'package:cbsoft/cbsoft/committee.template.dart' as committee_template;
-import 'package:cbsoft/cbsoft/venuelocation.template.dart' as venuelocation_template;
-import 'package:cbsoft/cbsoft/conferencebanquet.template.dart' as conferencebanquet_template; 
-import 'package:cbsoft/cbsoft/registration.template.dart' as registration_template;
+import 'package:cbsoft/cbsoft/venuelocation.template.dart'
+    as venuelocation_template;
+import 'package:cbsoft/cbsoft/conferencebanquet.template.dart'
+    as conferencebanquet_template;
+import 'package:cbsoft/cbsoft/registration.template.dart'
+    as registration_template;
 import 'package:cbsoft/cbsoft/wtdsoft.template.dart' as wtdsoft_template;
 
+import 'package:cbsoft/cbsoft/conferenceproceedings.template.dart'
+    as conferenceproceedings_template;
+import 'package:cbsoft/cbsoft/conferenceprogram.template.dart'
+    as conferenceprogram_template;
+import 'package:cbsoft/cbsoft/industrytrack.template.dart'
+    as industrytrack_template;
+import 'package:cbsoft/cbsoft/previouseditions.template.dart'
+    as previouseditions_template;
+import 'package:cbsoft/cbsoft/promotionalmaterial.template.dart'
+    as promotionalmaterial_template;
 
-import 'package:cbsoft/cbsoft/conferenceproceedings.template.dart' as conferenceproceedings_template;
-import 'package:cbsoft/cbsoft/conferenceprogram.template.dart' as conferenceprogram_template;
-import 'package:cbsoft/cbsoft/industrytrack.template.dart' as industrytrack_template;
-import 'package:cbsoft/cbsoft/previouseditions.template.dart' as previouseditions_template;
-import 'package:cbsoft/cbsoft/promotionalmaterial.template.dart' as promotionalmaterial_template;
-
-import 'package:cbsoft/cbsoft/shortcourses.template.dart' as shortcourses_template;
-import 'package:cbsoft/cbsoft/toolssession.template.dart' as toolssession_template;
+import 'package:cbsoft/cbsoft/shortcourses.template.dart'
+    as shortcourses_template;
+import 'package:cbsoft/cbsoft/toolssession.template.dart'
+    as toolssession_template;
 import 'package:cbsoft/cbsoft/tutorials.template.dart' as tutorials_template;
 import 'package:cbsoft/cbsoft/workshops.template.dart' as workshops_template;
 
 import 'package:cbsoft/sbcars/sbcars.template.dart' as sbcars_template;
-import 'package:cbsoft/sbcars/sbcarskeynotes.template.dart' as sbcarskeynotes_template;
+import 'package:cbsoft/sbcars/sbcarskeynotes.template.dart'
+    as sbcarskeynotes_template;
 import 'package:cbsoft/sast.template.dart' as sast_template;
 
 import 'package:cbsoft/sblp/sblp.template.dart' as sblp_template;
 import 'package:cbsoft/sblp/sblpkeynote.template.dart' as sblpkeynote_template;
-import 'package:cbsoft/sblp/sblpprogramcommittee.template.dart' as sblpprogramcommittee_template;
+import 'package:cbsoft/sblp/sblpprogramcommittee.template.dart'
+    as sblpprogramcommittee_template;
 
 import 'package:cbsoft/sbes/sbes.template.dart' as sbes_template;
-import 'package:cbsoft/sbes/sbesresearchtrack.template.dart' as sbesresearchtrack_template;
-import 'package:cbsoft/sbes/sbesInsightfulideastrack.template.dart' as sbesInsightfulideastrack_template;
-import 'package:cbsoft/sbes/sbeseducationtrack.template.dart' as sbeseducationtrack_template;
-import 'package:cbsoft/sbes/sbeskeynotes.template.dart' as sbeskeynotes_template;
+import 'package:cbsoft/sbes/sbesresearchtrack.template.dart'
+    as sbesresearchtrack_template;
+import 'package:cbsoft/sbes/sbesInsightfulideastrack.template.dart'
+    as sbesInsightfulideastrack_template;
+import 'package:cbsoft/sbes/sbeseducationtrack.template.dart'
+    as sbeseducationtrack_template;
+import 'package:cbsoft/sbes/sbeskeynotes.template.dart'
+    as sbeskeynotes_template;
 import 'package:cbsoft/sbes/sbesposter.template.dart' as sbesposter_template;
-
-
-
-
-
-
+import 'package:cbsoft/sbes/sbestopicsinterest.template.dart'
+    as sbestopicsinterest_template;
+import 'package:cbsoft/sbes/sbesrevieweraward.template.dart'
+    as sbesrevieweraward_template;
+import 'package:cbsoft/sbes/sbesbestpaper.template.dart'
+    as sbesbestpaper_template;
+import 'package:cbsoft/sbes/sbespapercategories.template.dart'
+    as sbespapercategories_template;
+    
 
 export 'package:cbsoft/src/route_paths.dart';
 
 class Routes {
-
   static final cbsoft = RouteDefinition(
     routePath: RoutePaths.cbsoft,
     component: cbsoft_template.CBSoftNgFactory,
@@ -67,7 +84,8 @@ class Routes {
   );
   static final sbesInsightfulideastrack = RouteDefinition(
     routePath: RoutePaths.sbesInsightfulideastrack,
-    component: sbesInsightfulideastrack_template.SbesInsightfulideastrackNgFactory,
+    component:
+        sbesInsightfulideastrack_template.SbesInsightfulideastrackNgFactory,
   );
   static final sbeseducationtrack = RouteDefinition(
     routePath: RoutePaths.sbeseducationtrack,
@@ -81,6 +99,23 @@ class Routes {
     routePath: RoutePaths.sbesposter,
     component: sbesposter_template.SbesposterNgFactory,
   );
+  static final sbestopicsinterest = RouteDefinition(
+    routePath: RoutePaths.sbestopicsinterest,
+    component: sbestopicsinterest_template.SbestopicsinterestNgFactory,
+  );
+  static final sbesrevieweraward = RouteDefinition(
+    routePath: RoutePaths.sbesrevieweraward,
+    component: sbesrevieweraward_template.SbesreviewerawardNgFactory,
+  );
+  static final sbesbestpaper = RouteDefinition(
+    routePath: RoutePaths.sbesbestpaper,
+    component: sbesbestpaper_template.SbesbestpaperNgFactory,
+  );
+  static final sbespapercategories = RouteDefinition(
+    routePath: RoutePaths.sbespapercategories,
+    component: sbespapercategories_template.SbespapercategoriesNgFactory,
+  );
+
   
 
 //------- SBLP -----------------
@@ -184,6 +219,10 @@ class Routes {
     sbeseducationtrack,
     sbeskeynotes,
     sbesposter,
+    sbestopicsinterest,
+    sbesrevieweraward,
+    sbesbestpaper,
+    sbespapercategories,
     committee,
     sblp,
     sblpkeynote,
