@@ -58,6 +58,16 @@ import 'package:cbsoft/sbes/sbesbestpaper.template.dart'
     as sbesbestpaper_template;
 import 'package:cbsoft/sbes/sbespapercategories.template.dart'
     as sbespapercategories_template;
+import 'package:cbsoft/sbes/sbesmanuscript.template.dart'
+    as sbesmanuscript_template;
+import 'package:cbsoft/sbes/sbesdoubleblindsubmission.template.dart'
+    as sbesdoubleblindsubmission_template;
+import 'package:cbsoft/sbes/sbesmentoringprogram.template.dart'
+    as sbesmentoringprogram_template;
+
+    
+    
+    
     
 
 export 'package:cbsoft/src/route_paths.dart';
@@ -114,6 +124,20 @@ class Routes {
   static final sbespapercategories = RouteDefinition(
     routePath: RoutePaths.sbespapercategories,
     component: sbespapercategories_template.SbespapercategoriesNgFactory,
+  );
+  
+static final sbesmanuscript = RouteDefinition(
+    routePath: RoutePaths.sbesmanuscript,
+    component: sbesmanuscript_template.SbesmanuscriptNgFactory,
+  );
+  
+  static final sbesdoubleblindsubmission = RouteDefinition(
+    routePath: RoutePaths.sbesdoubleblindsubmission,
+    component: sbesdoubleblindsubmission_template.SbesdoubleblindsubmissionNgFactory,
+  );
+  static final sbesmentoringprogram = RouteDefinition(
+    routePath: RoutePaths.sbesmentoringprogram,
+    component: sbesmentoringprogram_template.SbesmentoringprogramNgFactory,
   );
 
   
@@ -223,6 +247,9 @@ class Routes {
     sbesrevieweraward,
     sbesbestpaper,
     sbespapercategories,
+    sbesmanuscript,
+    sbesdoubleblindsubmission,
+    sbesmentoringprogram,
     committee,
     sblp,
     sblpkeynote,

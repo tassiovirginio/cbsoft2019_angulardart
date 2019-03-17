@@ -38,6 +38,9 @@ class RoutePaths {
   static final sbesrevieweraward = RoutePath(path: 'sbesrevieweraward');
   static final sbesbestpaper = RoutePath(path: 'sbesbestpaper');
   static final sbespapercategories = RoutePath(path: 'sbespapercategories');
+  static final sbesmanuscript = RoutePath(path: 'sbesmanuscript');
+  static final sbesdoubleblindsubmission = RoutePath(path: 'sbesdoubleblindsubmission');
+  static final sbesmentoringprogram = RoutePath(path: 'sbesmentoringprogram');
   
   
 }
