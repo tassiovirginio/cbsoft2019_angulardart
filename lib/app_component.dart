@@ -11,7 +11,7 @@ import 'src/routes.dart';
 
 @Component(
   selector: 'my-app',
-  template: '''
+  template: ''''
     <carousel></carousel>
     <navbar></navbar>
     <router-outlet [routes]="Routes.all"></router-outlet>
