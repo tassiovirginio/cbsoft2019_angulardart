@@ -5,7 +5,7 @@ import 'package:cbsoft/src/footer/footer_component.dart';
 import 'package:cbsoft/src/codeofconduct/codeofconduct_component.dart';
 import 'package:cbsoft/src/organization/organization_component.dart';
 import 'package:cbsoft/app_component.dart';
-import 'package:cbsoft/src/route_paths.dart';
+// import 'package:cbsoft/src/route_paths.dart';
 
 @Component(
   selector: 'page',
