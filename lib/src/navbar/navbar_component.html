@@ -34,9 +34,9 @@
                     <a class="dropdown-item" [routerLink]="RoutePaths.shortcourses.toUrl()">
                         <lb pt="Cursos" en="Short courses"></lb>
                     </a>
-                    <a class="dropdown-item" [routerLink]="RoutePaths.workshops.toUrl()">
+                    <!-- <a class="dropdown-item" [routerLink]="RoutePaths.workshops.toUrl()">
                         <lb pt="Workshops" en="Workshops"></lb>
-                    </a>
+                    </a> -->
                     <a class="dropdown-item" [routerLink]="RoutePaths.toolssession.toUrl()">
                         <lb pt="Seção de Ferramentas" en="Tools Session"></lb>
                     </a>
@@ -126,6 +126,20 @@
                     <a class="dropdown-item" href="#">Call for Papers</a>
                     <a class="dropdown-item" href="#">Keynote Speakers</a>
                 </div> -->
+            </li>
+
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <font style="color: red; font-weight: bold;">W</font>orkshops
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" [routerLink]="RoutePaths.workshops.toUrl()">Home Workshops</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" target="_blank" href="">VEM 2019</a>
+                    <a class="dropdown-item" target="_blank" href="">I MSSiS</a>
+                    <a class="dropdown-item" target="_blank" href="https://bware2019.github.io/">BWARE’19</a>
+                </div>
             </li>
 
             <!-- <li class="nav-item dropdown">
