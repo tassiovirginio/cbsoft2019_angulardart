@@ -28,4 +28,12 @@ class OrganizationComponent{
       return "Promotion";
     }
   }
+
+  get supporter {
+    if(language == "pt"){
+      return "Apoio";
+    }else{
+      return "Supporter";
+    }
+  }
 }
