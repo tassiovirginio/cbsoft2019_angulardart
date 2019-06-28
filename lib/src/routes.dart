@@ -33,7 +33,9 @@ import 'package:cbsoft/cbsoft/workshops.template.dart' as workshops_template;
 import 'package:cbsoft/sbcars/sbcars.template.dart' as sbcars_template;
 import 'package:cbsoft/sbcars/sbcarskeynotes.template.dart'
     as sbcarskeynotes_template;
-import 'package:cbsoft/sast.template.dart' as sast_template;
+
+import 'package:cbsoft/sast/sast.template.dart' as sast_template;
+import 'package:cbsoft/sast/sastkeynotes.template.dart' as sastkeynotes_template;
 
 import 'package:cbsoft/sblp/sblp.template.dart' as sblp_template;
 import 'package:cbsoft/sblp/sblpkeynote.template.dart' as sblpkeynote_template;
@@ -169,6 +171,10 @@ static final sbesmanuscript = RouteDefinition(
     routePath: RoutePaths.sast,
     component: sast_template.SastNgFactory,
   );
+    static final sastkeynotes = RouteDefinition(
+    routePath: RoutePaths.sastkeynotes,
+    component: sastkeynotes_template.SastkeynotesNgFactory,
+  );
 
   static final venuelocation = RouteDefinition(
     routePath: RoutePaths.venuelocation,
@@ -257,6 +263,7 @@ static final sbesmanuscript = RouteDefinition(
     sbcars,
     sbcarskeynotes,
     sast,
+    sastkeynotes,
     venuelocation,
     conferencebanquet,
     wtdsoft,

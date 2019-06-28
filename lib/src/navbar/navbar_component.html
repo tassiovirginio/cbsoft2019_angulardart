@@ -116,16 +116,15 @@
                 </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link _dropdown-toggle" [routerLink]="RoutePaths.sast.toUrl()" id="navbarDropdown"
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
                     role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <font style="color: red; font-weight: bold;">IV</font> SAST
                 </a>
-                <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a class="dropdown-item" [routerLink]="RoutePaths.sast.toUrl()">Home SAST</a>
                     <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#">Call for Papers</a>
-                    <a class="dropdown-item" href="#">Keynote Speakers</a>
-                </div> -->
+                    <a class="dropdown-item" [routerLink]="RoutePaths.sastkeynotes.toUrl()">Keynote Speakers</a>
+                </div> 
             </li>
 
             <li class="nav-item dropdown">

@@ -8,6 +8,7 @@ class RoutePaths {
   static final sbcars = RoutePath(path: 'sbcars');
   static final sbcarskeynotes = RoutePath(path: 'sbcarskeynotes');
   static final sast = RoutePath(path: 'sast');
+  static final sastkeynotes = RoutePath(path: 'sastkeynotes');
   static final venuelocation = RoutePath(path: 'venuelocation');
   static final conferencebanquet = RoutePath(path: 'conferencebanquet');
   static final wtdsoft = RoutePath(path: 'wtdsoft');
