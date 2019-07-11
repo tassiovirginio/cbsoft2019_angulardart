@@ -31,6 +31,12 @@ import 'package:cbsoft/cbsoft/workshops.template.dart' as workshops_template;
 
 import 'package:cbsoft/venuelocation/venuelocation.template.dart' as venuelocation_template;
 import 'package:cbsoft/venuelocation/accommodations.template.dart' as accommodations_template;
+import 'package:cbsoft/venuelocation/aboutsalvador.template.dart' as aboutsalvador_template;
+import 'package:cbsoft/venuelocation/tourism.template.dart' as tourism_template;
+
+
+
+
 
 
 import 'package:cbsoft/sbcars/sbcars.template.dart' as sbcars_template;
@@ -189,6 +195,18 @@ static final sbesmanuscript = RouteDefinition(
     component: accommodations_template.AccommodationsNgFactory,
   );
 
+  static final aboutsalvador = RouteDefinition(
+    routePath: RoutePaths.aboutsalvador,
+    component: aboutsalvador_template.AboutsalvadorNgFactory,
+  );
+
+  static final tourism = RouteDefinition(
+    routePath: RoutePaths.tourism,
+    component: tourism_template.TourismNgFactory,
+  );
+
+
+
 
   static final conferencebanquet = RouteDefinition(
     routePath: RoutePaths.conferencebanquet,
@@ -275,6 +293,8 @@ static final sbesmanuscript = RouteDefinition(
     sastkeynotes,
     venuelocation,
     accommodations,
+    aboutsalvador,
+    tourism,
     conferencebanquet,
     wtdsoft,
     registration,
