@@ -154,11 +154,23 @@
                         on Search-based Software Engineering</a>
                 </div>
             </li> -->
+
             <li class="nav-item dropdown">
-                <a class="nav-link" [routerLink]="RoutePaths.venuelocation.toUrl()">
+                <a class="nav-link dropdown-toggle" id="navbarDropdown"
+                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     <lb pt="Local do Evento" en="Venue & Location"></lb>
                 </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" [routerLink]="RoutePaths.venuelocation.toUrl()">Map</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" [routerLink]="RoutePaths.accommodations.toUrl()" >Accommodations</a>
+                    <a class="dropdown-item" target="_blank" href="http://inf.ufg.br/mssis/">Partner Restaurants</a>
+                    <a class="dropdown-item" target="_blank" href="https://bware2019.github.io/">About Salvador</a>
+                    <a class="dropdown-item" target="_blank" href="https://bware2019.github.io/">Tourism in Salvador</a>
+                </div>
             </li>
+
+
             <!-- <li class="nav-item">
                 <a class="nav-link" [routerLink]="RoutePaths.conferencebanquet.toUrl()">
                     <lb pt="Banquete de Conferências" en="Conference Banquet"></lb>

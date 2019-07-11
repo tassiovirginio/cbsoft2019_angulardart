@@ -4,8 +4,7 @@ import 'package:angular_router/angular_router.dart';
 import 'package:cbsoft/src/route_paths.dart';
 import 'package:cbsoft/cbsoft/cbsoft.template.dart' as cbsoft_template;
 import 'package:cbsoft/cbsoft/committee.template.dart' as committee_template;
-import 'package:cbsoft/cbsoft/venuelocation.template.dart'
-    as venuelocation_template;
+
 import 'package:cbsoft/cbsoft/conferencebanquet.template.dart'
     as conferencebanquet_template;
 import 'package:cbsoft/cbsoft/registration.template.dart'
@@ -29,6 +28,10 @@ import 'package:cbsoft/cbsoft/toolssession.template.dart'
     as toolssession_template;
 import 'package:cbsoft/cbsoft/tutorials.template.dart' as tutorials_template;
 import 'package:cbsoft/cbsoft/workshops.template.dart' as workshops_template;
+
+import 'package:cbsoft/venuelocation/venuelocation.template.dart' as venuelocation_template;
+import 'package:cbsoft/venuelocation/accommodations.template.dart' as accommodations_template;
+
 
 import 'package:cbsoft/sbcars/sbcars.template.dart' as sbcars_template;
 import 'package:cbsoft/sbcars/sbcarskeynotes.template.dart'
@@ -181,6 +184,12 @@ static final sbesmanuscript = RouteDefinition(
     component: venuelocation_template.VenuelocationNgFactory,
   );
 
+  static final accommodations = RouteDefinition(
+    routePath: RoutePaths.accommodations,
+    component: accommodations_template.AccommodationsNgFactory,
+  );
+
+
   static final conferencebanquet = RouteDefinition(
     routePath: RoutePaths.conferencebanquet,
     component: conferencebanquet_template.ConferencebanquetNgFactory,
@@ -265,6 +274,7 @@ static final sbesmanuscript = RouteDefinition(
     sast,
     sastkeynotes,
     venuelocation,
+    accommodations,
     conferencebanquet,
     wtdsoft,
     registration,

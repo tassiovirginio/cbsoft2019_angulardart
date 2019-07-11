@@ -9,7 +9,6 @@ class RoutePaths {
   static final sbcarskeynotes = RoutePath(path: 'sbcarskeynotes');
   static final sast = RoutePath(path: 'sast');
   static final sastkeynotes = RoutePath(path: 'sastkeynotes');
-  static final venuelocation = RoutePath(path: 'venuelocation');
   static final conferencebanquet = RoutePath(path: 'conferencebanquet');
   static final wtdsoft = RoutePath(path: 'wtdsoft');
   static final registration = RoutePath(path: 'registration');
@@ -24,6 +23,9 @@ class RoutePaths {
   static final toolssession = RoutePath(path: 'toolssession');
   static final tutorials = RoutePath(path: 'tutorials');
   static final workshops = RoutePath(path: 'workshops');
+
+  static final venuelocation = RoutePath(path: 'venuelocation');
+  static final accommodations = RoutePath(path: 'accommodations');
 
   static final sblp = RoutePath(path: 'sblp');
   static final sblpkeynote = RoutePath(path: 'sblpkeynote');
