@@ -28,6 +28,8 @@ class RoutePaths {
   static final accommodations = RoutePath(path: 'accommodations');
   static final aboutsalvador = RoutePath(path: 'aboutsalvador');
   static final tourism = RoutePath(path: 'tourism');
+  static final partnerrestaurants = RoutePath(path: 'partnerrestaurants');  
+  
   
   
 
