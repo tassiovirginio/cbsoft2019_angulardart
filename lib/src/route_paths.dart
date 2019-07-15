@@ -11,6 +11,8 @@ class RoutePaths {
   static final sastkeynotes = RoutePath(path: 'sastkeynotes');
   static final conferencebanquet = RoutePath(path: 'conferencebanquet');
   static final wtdsoft = RoutePath(path: 'wtdsoft');
+  static final wtdsoftacceptedpapers = RoutePath(path: 'wtdsoftacceptedpapers');
+  
   static final registration = RoutePath(path: 'registration');
 
   static final conferenceproceedings = RoutePath(path: 'conferenceproceedings');

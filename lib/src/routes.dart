@@ -10,6 +10,8 @@ import 'package:cbsoft/cbsoft/conferencebanquet.template.dart'
 import 'package:cbsoft/cbsoft/registration.template.dart'
     as registration_template;
 import 'package:cbsoft/cbsoft/wtdsoft.template.dart' as wtdsoft_template;
+import 'package:cbsoft/cbsoft/wtdsoftacceptedpapers.template.dart' as wtdsoftacceptedpapers_template;
+
 
 import 'package:cbsoft/cbsoft/conferenceproceedings.template.dart'
     as conferenceproceedings_template;
@@ -230,6 +232,13 @@ static final sbesmanuscript = RouteDefinition(
     component: wtdsoft_template.WtdsoftNgFactory,
   );
 
+    static final wtdsoftacceptedpapers = RouteDefinition(
+    routePath: RoutePaths.wtdsoftacceptedpapers,
+    component: wtdsoftacceptedpapers_template.WtdsoftacceptedpapersNgFactory,
+  );
+
+  
+
   static final registration = RouteDefinition(
     routePath: RoutePaths.registration,
     component: registration_template.RegistrationNgFactory,
@@ -310,6 +319,7 @@ static final sbesmanuscript = RouteDefinition(
     partnerrestaurants,
     conferencebanquet,
     wtdsoft,
+    wtdsoftacceptedpapers,
     registration,
     conferenceproceedings,
     conferenceprogram,
