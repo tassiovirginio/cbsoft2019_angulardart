@@ -26,8 +26,13 @@ import 'package:cbsoft/cbsoft/promotionalmaterial.template.dart'
 
 import 'package:cbsoft/cbsoft/shortcourses.template.dart'
     as shortcourses_template;
+
 import 'package:cbsoft/cbsoft/toolssession.template.dart'
     as toolssession_template;
+import 'package:cbsoft/cbsoft/toolssessionacceptedpapers.template.dart'
+    as toolssessionacceptedpapers_template;
+
+
 import 'package:cbsoft/cbsoft/tutorials.template.dart' as tutorials_template;
 import 'package:cbsoft/cbsoft/workshops.template.dart' as workshops_template;
 
@@ -279,6 +284,12 @@ static final sbesmanuscript = RouteDefinition(
     component: toolssession_template.ToolssessionNgFactory,
   );
 
+  static final toolssessionacceptedpapers = RouteDefinition(
+    routePath: RoutePaths.toolssessionacceptedpapers,
+    component: toolssessionacceptedpapers_template.ToolssessionacceptedpapersNgFactory,
+  );
+
+
   static final tutorials = RouteDefinition(
     routePath: RoutePaths.tutorials,
     component: tutorials_template.TutorialsNgFactory,
@@ -328,6 +339,7 @@ static final sbesmanuscript = RouteDefinition(
     promotionalmaterial,
     shortcourses,
     toolssession,
+    toolssessionacceptedpapers,
     tutorials,
     workshops,
     RouteDefinition.redirect(

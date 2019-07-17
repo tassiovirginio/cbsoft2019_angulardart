@@ -22,7 +22,11 @@ class RoutePaths {
   static final promotionalmaterial = RoutePath(path: 'promotionalmaterial');
 
   static final shortcourses = RoutePath(path: 'shortcourses');
+  
   static final toolssession = RoutePath(path: 'toolssession');
+  static final toolssessionacceptedpapers = RoutePath(path: 'toolssessionacceptedpapers');
+  
+
   static final tutorials = RoutePath(path: 'tutorials');
   static final workshops = RoutePath(path: 'workshops');
 

@@ -76,9 +76,35 @@
                     <!-- <a class="dropdown-item" [routerLink]="RoutePaths.workshops.toUrl()">
                         <lb pt="Workshops" en="Workshops"></lb>
                     </a> -->
-                    <a class="dropdown-item" [routerLink]="RoutePaths.toolssession.toUrl()">
+                    <!-- <a class="dropdown-item" [routerLink]="RoutePaths.toolssession.toUrl()">
                         <lb pt="Seção de Ferramentas" en="Tools Session"></lb>
-                    </a>
+                    </a> -->
+
+                    <!-- #################################### SUBMENU #################################### -->
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle">
+                            <lb pt="Sessão de Ferramentas" en="Tools Session"></lb>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" [routerLink]="RoutePaths.toolssession.toUrl()">Home</a></li>
+                            <li><a class="dropdown-item" [routerLink]="RoutePaths.toolssessionacceptedpapers.toUrl()">
+                                <lb pt="Artigos Aceitos" en="Accepted Papers"></lb>
+                            </a></li>
+                            
+                            <!-- <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Submenu 1</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Subsubmenu1</a></li>
+                                    <li><a class="dropdown-item" href="#">Subsubmenu1</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Submenu 2</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Subsubmenu2</a></li>
+                                    <li><a class="dropdown-item" href="#">Subsubmenu2</a></li>
+                                </ul>
+                            </li> -->
+                        </ul>
+                    </li>
 
                     <!-- #################################### SUBMENU #################################### -->
                     <li class="dropdown-submenu">
