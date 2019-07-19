@@ -3,10 +3,10 @@ import 'package:cbsoft/src/components/page.dart';
 import 'package:cbsoft/src/route_paths.dart';
 
 @Component(
-  selector: 'prepostevent',
-  templateUrl: 'prepostevent.html',
+  selector: 'travelagency',
+  templateUrl: 'travelagency.html',
   directives: [Page]
 )
-class Prepostevent {
-  String url() => RoutePaths.prepostevent.toUrl();
+class Travelagency {
+  String url() => RoutePaths.travelagency.toUrl();
 }

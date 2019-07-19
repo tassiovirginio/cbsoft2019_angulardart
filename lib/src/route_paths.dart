@@ -36,7 +36,7 @@ class RoutePaths {
   static final tourism = RoutePath(path: 'tourism');
   static final partnerrestaurants = RoutePath(path: 'partnerrestaurants');  
   
-  static final prepostevent = RoutePath(path: 'prepostevent');  
+  static final travelagency = RoutePath(path: 'travelagency');  
   
   
 
