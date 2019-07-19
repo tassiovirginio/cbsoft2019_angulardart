@@ -41,6 +41,8 @@ import 'package:cbsoft/venuelocation/accommodations.template.dart' as accommodat
 import 'package:cbsoft/venuelocation/aboutsalvador.template.dart' as aboutsalvador_template;
 import 'package:cbsoft/venuelocation/tourism.template.dart' as tourism_template;
 import 'package:cbsoft/venuelocation/partnerrestaurants.template.dart' as partnerrestaurants_template;
+import 'package:cbsoft/venuelocation/prepostevent.template.dart' as prepostevent_template;
+
 
 
 
@@ -230,6 +232,12 @@ static final sbesmanuscript = RouteDefinition(
     component: partnerrestaurants_template.PartnerrestaurantsNgFactory,
   );  
 
+  static final prepostevent = RouteDefinition(
+    routePath: RoutePaths.prepostevent,
+    component: prepostevent_template.PreposteventNgFactory,
+  );
+  
+
 
 
 
@@ -341,6 +349,7 @@ static final sbesmanuscript = RouteDefinition(
     tourism,
     partnerrestaurants,
     conferencebanquet,
+    prepostevent,
     wtdsoft,
     wtdsoftacceptedpapers,
     registration,
