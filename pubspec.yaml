@@ -5,7 +5,8 @@ description: A web app that uses AngularDart Components
 # author: Tássio Virgínio <email@example.com>
 
 environment:
-  sdk: '>=2.1.0 <3.0.0'
+  # sdk: '>=2.1.0 <3.0.0'
+  sdk: '>=2.1.0 <2.1.2'
 
 dependencies:
   angular: ^5.2.0
