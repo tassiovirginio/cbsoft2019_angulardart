@@ -173,7 +173,21 @@
                         </ul>
                     </li>
 
-                    <a class="dropdown-item" [routerLink]="RoutePaths.sbeseducationtrack.toUrl()">Education Track</a>
+                    <!-- <a class="dropdown-item" [routerLink]="RoutePaths.sbeseducationtrack.toUrl()">Education Track</a> -->
+
+                    <!-- #################################### SUBMENU #################################### -->
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle">
+                            <lb pt="Education Track" en="Education Track"></lb>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" [routerLink]="RoutePaths.sbeseducationtrack.toUrl()">Home</a></li>
+                            <li><a class="dropdown-item" [routerLink]="RoutePaths.sbeseducationtrackacceptedpapers.toUrl()">
+                                <lb pt="Artigos Aceitos" en="Accepted Papers"></lb>
+                            </a></li>
+                        </ul>
+                    </li>
+
                     <a class="dropdown-item" [routerLink]="RoutePaths.sbeskeynotes.toUrl()">Keynotes</a>
                     <!-- <a class="dropdown-item" [routerLink]="RoutePaths.sbestopicsinterest.toUrl()">Topics Interest</a> -->
                     <!-- <a class="dropdown-item" [routerLink]="RoutePaths.sbesrevieweraward.toUrl()">Best Reviewer Award</a> -->

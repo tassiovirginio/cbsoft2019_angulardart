@@ -51,6 +51,10 @@ class RoutePaths {
 
 
   static final sbeseducationtrack = RoutePath(path: 'sbeseducationtrack');
+  static final sbeseducationtrackacceptedpapers = RoutePath(path: 'sbeseducationtrackacceptedpapers');
+
+
+
   static final sbeskeynotes = RoutePath(path: 'sbeskeynotes');
   static final sbesposter = RoutePath(path: 'sbesposter');
   static final sbestopicsinterest = RoutePath(path: 'sbestopicsinterest');
