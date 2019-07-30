@@ -155,21 +155,33 @@
                     <a class="dropdown-item" [routerLink]="RoutePaths.sbes.toUrl()">Home SBES</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" [routerLink]="RoutePaths.sbesposter.toUrl()">Poster</a>
-                    <a class="dropdown-item" [routerLink]="RoutePaths.sbesresearchtrack.toUrl()">Research Track</a>
+
+                    <!-- #################################### SUBMENU #################################### -->
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle">
+                            <lb pt="Research Track" en="Research Track"></lb>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" [routerLink]="RoutePaths.sbesresearchtrack.toUrl()">Home</a></li>
+                            <li><a class="dropdown-item" [routerLink]="RoutePaths.sbesresearchtrackacceptedpapers.toUrl()">
+                                    <lb pt="Artigos Aceitos" en="Accepted Papers"></lb>
+                                </a></li>
+                        </ul>
+                    </li>
                     
                     <!-- <a class="dropdown-item" [routerLink]="RoutePaths.sbesInsightfulideastrack.toUrl()">Insightful Ideas
                         & Emerging Results Track</a> -->
 
-                     <!-- #################################### SUBMENU #################################### -->
-                     <li class="dropdown-submenu">
+                    <!-- #################################### SUBMENU #################################### -->
+                    <li class="dropdown-submenu">
                         <a class="dropdown-item dropdown-toggle">
                             <lb pt="Insightful Ideas & Emerging Results Track" en="Insightful Ideas & Emerging Results Track"></lb>
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" [routerLink]="RoutePaths.sbesInsightfulideastrack.toUrl()">Home</a></li>
                             <li><a class="dropdown-item" [routerLink]="RoutePaths.sbesInsightfulideastrackacceptedpapers.toUrl()">
-                                <lb pt="Artigos Aceitos" en="Accepted Papers"></lb>
-                            </a></li>
+                                    <lb pt="Artigos Aceitos" en="Accepted Papers"></lb>
+                                </a></li>
                         </ul>
                     </li>
 

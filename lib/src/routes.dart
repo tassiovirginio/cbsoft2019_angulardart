@@ -65,6 +65,10 @@ import 'package:cbsoft/sblp/sblpprogramcommittee.template.dart'
 import 'package:cbsoft/sbes/sbes.template.dart' as sbes_template;
 import 'package:cbsoft/sbes/sbesresearchtrack.template.dart'
     as sbesresearchtrack_template;
+import 'package:cbsoft/sbes/sbesresearchtrackacceptedpapers.template.dart'
+    as sbesresearchtrackacceptedpapers_template;
+
+
 import 'package:cbsoft/sbes/sbesInsightfulideastrack.template.dart'
     as sbesInsightfulideastrack_template;
 import 'package:cbsoft/sbes/sbesInsightfulideastrackacceptedpapers.template.dart'
@@ -123,6 +127,15 @@ class Routes {
     routePath: RoutePaths.sbesresearchtrack,
     component: sbesresearchtrack_template.SbesresearchtrackNgFactory,
   );
+
+  static final sbesresearchtrackacceptedpapers = RouteDefinition(
+    routePath: RoutePaths.sbesresearchtrackacceptedpapers,
+    component: sbesresearchtrackacceptedpapers_template.SbesresearchtrackacceptedpapersNgFactory,
+  );
+
+
+
+
   static final sbesInsightfulideastrack = RouteDefinition(
     routePath: RoutePaths.sbesInsightfulideastrack,
     component:
@@ -335,6 +348,7 @@ static final sbesmanuscript = RouteDefinition(
     cbsoft,
     sbes,
     sbesresearchtrack,
+    sbesresearchtrackacceptedpapers,
     sbesInsightfulideastrack,
     sbesInsightfulideastrackacceptedpapers,
     sbeseducationtrack,
