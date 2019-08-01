@@ -10,8 +10,8 @@ import 'package:cbsoft/cbsoft/conferencebanquet.template.dart'
 import 'package:cbsoft/cbsoft/registration.template.dart'
     as registration_template;
 import 'package:cbsoft/cbsoft/wtdsoft.template.dart' as wtdsoft_template;
-import 'package:cbsoft/cbsoft/wtdsoftacceptedpapers.template.dart' as wtdsoftacceptedpapers_template;
-
+import 'package:cbsoft/cbsoft/wtdsoftacceptedpapers.template.dart'
+    as wtdsoftacceptedpapers_template;
 
 import 'package:cbsoft/cbsoft/conferenceproceedings.template.dart'
     as conferenceproceedings_template;
@@ -32,32 +32,38 @@ import 'package:cbsoft/cbsoft/toolssession.template.dart'
 import 'package:cbsoft/cbsoft/toolssessionacceptedpapers.template.dart'
     as toolssessionacceptedpapers_template;
 
-
 import 'package:cbsoft/cbsoft/tutorials.template.dart' as tutorials_template;
 import 'package:cbsoft/cbsoft/workshops.template.dart' as workshops_template;
 
-import 'package:cbsoft/venuelocation/venuelocation.template.dart' as venuelocation_template;
-import 'package:cbsoft/venuelocation/accommodations.template.dart' as accommodations_template;
-import 'package:cbsoft/venuelocation/aboutsalvador.template.dart' as aboutsalvador_template;
+import 'package:cbsoft/venuelocation/venuelocation.template.dart'
+    as venuelocation_template;
+import 'package:cbsoft/venuelocation/accommodations.template.dart'
+    as accommodations_template;
+import 'package:cbsoft/venuelocation/aboutsalvador.template.dart'
+    as aboutsalvador_template;
 import 'package:cbsoft/venuelocation/tourism.template.dart' as tourism_template;
-import 'package:cbsoft/venuelocation/partnerrestaurants.template.dart' as partnerrestaurants_template;
-import 'package:cbsoft/venuelocation/travelagency.template.dart' as travelagency_template;
-
-
-
-
-
-
-
+import 'package:cbsoft/venuelocation/partnerrestaurants.template.dart'
+    as partnerrestaurants_template;
+import 'package:cbsoft/venuelocation/travelagency.template.dart'
+    as travelagency_template;
 
 import 'package:cbsoft/sbcars/sbcars.template.dart' as sbcars_template;
+import 'package:cbsoft/sbcars/sbcarsacceptedpapers.template.dart' as sbcarsacceptedpapers_template;
+
 import 'package:cbsoft/sbcars/sbcarskeynotes.template.dart'
     as sbcarskeynotes_template;
 
 import 'package:cbsoft/sast/sast.template.dart' as sast_template;
-import 'package:cbsoft/sast/sastkeynotes.template.dart' as sastkeynotes_template;
+import 'package:cbsoft/sast/sastacceptedpapers.template.dart'
+    as sastacceptedpapers_template;
+
+import 'package:cbsoft/sast/sastkeynotes.template.dart'
+    as sastkeynotes_template;
 
 import 'package:cbsoft/sblp/sblp.template.dart' as sblp_template;
+import 'package:cbsoft/sblp/sblpacceptedpapers.template.dart'
+    as sblpacceptedpapers_template;
+
 import 'package:cbsoft/sblp/sblpkeynote.template.dart' as sblpkeynote_template;
 import 'package:cbsoft/sblp/sblpprogramcommittee.template.dart'
     as sblpprogramcommittee_template;
@@ -68,19 +74,15 @@ import 'package:cbsoft/sbes/sbesresearchtrack.template.dart'
 import 'package:cbsoft/sbes/sbesresearchtrackacceptedpapers.template.dart'
     as sbesresearchtrackacceptedpapers_template;
 
-
 import 'package:cbsoft/sbes/sbesInsightfulideastrack.template.dart'
     as sbesInsightfulideastrack_template;
 import 'package:cbsoft/sbes/sbesInsightfulideastrackacceptedpapers.template.dart'
-    as sbesInsightfulideastrackacceptedpapers_template;    
+    as sbesInsightfulideastrackacceptedpapers_template;
 
-    
 import 'package:cbsoft/sbes/sbeseducationtrack.template.dart'
     as sbeseducationtrack_template;
 import 'package:cbsoft/sbes/sbeseducationtrackacceptedpapers.template.dart'
     as sbeseducationtrackacceptedpapers_template;
-
-
 
 import 'package:cbsoft/sbes/sbeskeynotes.template.dart'
     as sbeskeynotes_template;
@@ -99,11 +101,6 @@ import 'package:cbsoft/sbes/sbesdoubleblindsubmission.template.dart'
     as sbesdoubleblindsubmission_template;
 import 'package:cbsoft/sbes/sbesmentoringprogram.template.dart'
     as sbesmentoringprogram_template;
-
-    
-    
-    
-    
 
 export 'package:cbsoft/src/route_paths.dart';
 
@@ -130,11 +127,9 @@ class Routes {
 
   static final sbesresearchtrackacceptedpapers = RouteDefinition(
     routePath: RoutePaths.sbesresearchtrackacceptedpapers,
-    component: sbesresearchtrackacceptedpapers_template.SbesresearchtrackacceptedpapersNgFactory,
+    component: sbesresearchtrackacceptedpapers_template
+        .SbesresearchtrackacceptedpapersNgFactory,
   );
-
-
-
 
   static final sbesInsightfulideastrack = RouteDefinition(
     routePath: RoutePaths.sbesInsightfulideastrack,
@@ -143,10 +138,9 @@ class Routes {
   );
   static final sbesInsightfulideastrackacceptedpapers = RouteDefinition(
     routePath: RoutePaths.sbesInsightfulideastrackacceptedpapers,
-    component:
-        sbesInsightfulideastrackacceptedpapers_template.SbesInsightfulideastrackacceptedpapersNgFactory,
+    component: sbesInsightfulideastrackacceptedpapers_template
+        .SbesInsightfulideastrackacceptedpapersNgFactory,
   );
-
 
   static final sbeseducationtrack = RouteDefinition(
     routePath: RoutePaths.sbeseducationtrack,
@@ -155,9 +149,9 @@ class Routes {
 
   static final sbeseducationtrackacceptedpapers = RouteDefinition(
     routePath: RoutePaths.sbeseducationtrackacceptedpapers,
-    component: sbeseducationtrackacceptedpapers_template.SbeseducationtrackacceptedpapersNgFactory,
+    component: sbeseducationtrackacceptedpapers_template
+        .SbeseducationtrackacceptedpapersNgFactory,
   );
-
 
   static final sbeskeynotes = RouteDefinition(
     routePath: RoutePaths.sbeskeynotes,
@@ -183,28 +177,32 @@ class Routes {
     routePath: RoutePaths.sbespapercategories,
     component: sbespapercategories_template.SbespapercategoriesNgFactory,
   );
-  
-static final sbesmanuscript = RouteDefinition(
+
+  static final sbesmanuscript = RouteDefinition(
     routePath: RoutePaths.sbesmanuscript,
     component: sbesmanuscript_template.SbesmanuscriptNgFactory,
   );
-  
+
   static final sbesdoubleblindsubmission = RouteDefinition(
     routePath: RoutePaths.sbesdoubleblindsubmission,
-    component: sbesdoubleblindsubmission_template.SbesdoubleblindsubmissionNgFactory,
+    component:
+        sbesdoubleblindsubmission_template.SbesdoubleblindsubmissionNgFactory,
   );
   static final sbesmentoringprogram = RouteDefinition(
     routePath: RoutePaths.sbesmentoringprogram,
     component: sbesmentoringprogram_template.SbesmentoringprogramNgFactory,
   );
 
-  
-
 //------- SBLP -----------------
   static final sblp = RouteDefinition(
     routePath: RoutePaths.sblp,
     component: sblp_template.SblpNgFactory,
   );
+  static final sblpacceptedpapers = RouteDefinition(
+    routePath: RoutePaths.sblpacceptedpapers,
+    component: sblpacceptedpapers_template.SblpacceptedpapersNgFactory,
+  );
+
   static final sblpkeynote = RouteDefinition(
     routePath: RoutePaths.sblpkeynote,
     component: sblpkeynote_template.SblpkeynoteNgFactory,
@@ -218,6 +216,12 @@ static final sbesmanuscript = RouteDefinition(
     routePath: RoutePaths.sbcars,
     component: sbcars_template.SbcarsNgFactory,
   );
+  static final sbcarsacceptedpapers = RouteDefinition(
+    routePath: RoutePaths.sbcarsacceptedpapers,
+    component: sbcarsacceptedpapers_template.SbcarsacceptedpapersNgFactory,
+  );
+
+
   static final sbcarskeynotes = RouteDefinition(
     routePath: RoutePaths.sbcarskeynotes,
     component: sbcarskeynotes_template.SbcarskeynotesNgFactory,
@@ -227,7 +231,13 @@ static final sbesmanuscript = RouteDefinition(
     routePath: RoutePaths.sast,
     component: sast_template.SastNgFactory,
   );
-    static final sastkeynotes = RouteDefinition(
+
+  static final sastacceptedpapers = RouteDefinition(
+    routePath: RoutePaths.sastacceptedpapers,
+    component: sastacceptedpapers_template.SastacceptedpapersNgFactory,
+  );
+
+  static final sastkeynotes = RouteDefinition(
     routePath: RoutePaths.sastkeynotes,
     component: sastkeynotes_template.SastkeynotesNgFactory,
   );
@@ -255,21 +265,12 @@ static final sbesmanuscript = RouteDefinition(
   static final partnerrestaurants = RouteDefinition(
     routePath: RoutePaths.partnerrestaurants,
     component: partnerrestaurants_template.PartnerrestaurantsNgFactory,
-  );  
+  );
 
   static final travelagency = RouteDefinition(
     routePath: RoutePaths.travelagency,
     component: travelagency_template.TravelagencyNgFactory,
   );
-  
-
-
-
-
-
-
-
-
 
   static final conferencebanquet = RouteDefinition(
     routePath: RoutePaths.conferencebanquet,
@@ -281,12 +282,10 @@ static final sbesmanuscript = RouteDefinition(
     component: wtdsoft_template.WtdsoftNgFactory,
   );
 
-    static final wtdsoftacceptedpapers = RouteDefinition(
+  static final wtdsoftacceptedpapers = RouteDefinition(
     routePath: RoutePaths.wtdsoftacceptedpapers,
     component: wtdsoftacceptedpapers_template.WtdsoftacceptedpapersNgFactory,
   );
-
-  
 
   static final registration = RouteDefinition(
     routePath: RoutePaths.registration,
@@ -330,9 +329,9 @@ static final sbesmanuscript = RouteDefinition(
 
   static final toolssessionacceptedpapers = RouteDefinition(
     routePath: RoutePaths.toolssessionacceptedpapers,
-    component: toolssessionacceptedpapers_template.ToolssessionacceptedpapersNgFactory,
+    component:
+        toolssessionacceptedpapers_template.ToolssessionacceptedpapersNgFactory,
   );
-
 
   static final tutorials = RouteDefinition(
     routePath: RoutePaths.tutorials,
@@ -364,11 +363,14 @@ static final sbesmanuscript = RouteDefinition(
     sbesmentoringprogram,
     committee,
     sblp,
+    sblpacceptedpapers,
     sblpkeynote,
     sblpprogramcommittee,
     sbcars,
+    sbcarsacceptedpapers,
     sbcarskeynotes,
     sast,
+    sastacceptedpapers,
     sastkeynotes,
     venuelocation,
     accommodations,

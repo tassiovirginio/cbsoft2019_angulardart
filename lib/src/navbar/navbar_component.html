@@ -88,9 +88,9 @@
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" [routerLink]="RoutePaths.toolssession.toUrl()">Home</a></li>
                             <li><a class="dropdown-item" [routerLink]="RoutePaths.toolssessionacceptedpapers.toUrl()">
-                                <lb pt="Artigos Aceitos" en="Accepted Papers"></lb>
-                            </a></li>
-                            
+                                    <lb pt="Artigos Aceitos" en="Accepted Papers"></lb>
+                                </a></li>
+
                             <!-- <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Submenu 1</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">Subsubmenu1</a></li>
@@ -111,8 +111,9 @@
                         <a class="dropdown-item dropdown-toggle">WTDSoft</a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" [routerLink]="RoutePaths.wtdsoft.toUrl()">Home</a></li>
-                            <li><a class="dropdown-item" [routerLink]="RoutePaths.wtdsoftacceptedpapers.toUrl()">Accepted Papers</a></li>
-                            
+                            <li><a class="dropdown-item"
+                                    [routerLink]="RoutePaths.wtdsoftacceptedpapers.toUrl()">Accepted Papers</a></li>
+
                             <!-- <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Submenu 1</a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="#">Subsubmenu1</a></li>
@@ -157,117 +158,131 @@
                     <a class="dropdown-item" [routerLink]="RoutePaths.sbesposter.toUrl()">Poster</a>
 
                     <!-- #################################### SUBMENU #################################### -->
-                    <li class="dropdown-submenu">
-                        <a class="dropdown-item dropdown-toggle">
-                            <lb pt="Research Track" en="Research Track"></lb>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" [routerLink]="RoutePaths.sbesresearchtrack.toUrl()">Home</a></li>
-                            <li><a class="dropdown-item" [routerLink]="RoutePaths.sbesresearchtrackacceptedpapers.toUrl()">
-                                    <lb pt="Artigos Aceitos" en="Accepted Papers"></lb>
-                                </a></li>
-                        </ul>
-                    </li>
-                    
-                    <!-- <a class="dropdown-item" [routerLink]="RoutePaths.sbesInsightfulideastrack.toUrl()">Insightful Ideas
+            <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle">
+                    <lb pt="Research Track" en="Research Track"></lb>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" [routerLink]="RoutePaths.sbesresearchtrack.toUrl()">Home</a></li>
+                    <li><a class="dropdown-item" [routerLink]="RoutePaths.sbesresearchtrackacceptedpapers.toUrl()">
+                            <lb pt="Artigos Aceitos" en="Accepted Papers"></lb>
+                        </a></li>
+                </ul>
+            </li>
+
+            <!-- <a class="dropdown-item" [routerLink]="RoutePaths.sbesInsightfulideastrack.toUrl()">Insightful Ideas
                         & Emerging Results Track</a> -->
 
-                    <!-- #################################### SUBMENU #################################### -->
-                    <li class="dropdown-submenu">
-                        <a class="dropdown-item dropdown-toggle">
-                            <lb pt="Insightful Ideas & Emerging Results Track" en="Insightful Ideas & Emerging Results Track"></lb>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" [routerLink]="RoutePaths.sbesInsightfulideastrack.toUrl()">Home</a></li>
-                            <li><a class="dropdown-item" [routerLink]="RoutePaths.sbesInsightfulideastrackacceptedpapers.toUrl()">
-                                    <lb pt="Artigos Aceitos" en="Accepted Papers"></lb>
-                                </a></li>
-                        </ul>
-                    </li>
-
-                    <!-- <a class="dropdown-item" [routerLink]="RoutePaths.sbeseducationtrack.toUrl()">Education Track</a> -->
-
-                    <!-- #################################### SUBMENU #################################### -->
-                    <li class="dropdown-submenu">
-                        <a class="dropdown-item dropdown-toggle">
-                            <lb pt="Education Track" en="Education Track"></lb>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" [routerLink]="RoutePaths.sbeseducationtrack.toUrl()">Home</a></li>
-                            <li><a class="dropdown-item" [routerLink]="RoutePaths.sbeseducationtrackacceptedpapers.toUrl()">
-                                <lb pt="Artigos Aceitos" en="Accepted Papers"></lb>
-                            </a></li>
-                        </ul>
-                    </li>
-
-                    <a class="dropdown-item" [routerLink]="RoutePaths.sbeskeynotes.toUrl()">Keynotes</a>
-                    <!-- <a class="dropdown-item" [routerLink]="RoutePaths.sbestopicsinterest.toUrl()">Topics Interest</a> -->
-                    <!-- <a class="dropdown-item" [routerLink]="RoutePaths.sbesrevieweraward.toUrl()">Best Reviewer Award</a> -->
-                    <!-- <a class="dropdown-item" [routerLink]="RoutePaths.sbesbestpaper.toUrl()">Best Paper Award</a> -->
-                    <!-- <a class="dropdown-item" [routerLink]="RoutePaths.sbespapercategories.toUrl()">Paper Categories</a> -->
-                    <!-- <a class="dropdown-item" [routerLink]="RoutePaths.sbesmanuscript.toUrl()">Manuscript Preparation Double Blind Review And Submission</a> -->
-                    <!-- <a class="dropdown-item" [routerLink]="RoutePaths.sbesdoubleblindsubmission.toUrl()">Double-Blind Submission</a> -->
-                    <!-- <a class="dropdown-item" [routerLink]="RoutePaths.sbesmentoringprogram.toUrl()">Mentoring Program</a> -->
-
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                    aria-haspopup="false" aria-expanded="false">
-                    <font style="color: red; font-weight: bold;">XXIII</font> SBLP
+            <!-- #################################### SUBMENU #################################### -->
+            <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle">
+                    <lb pt="Insightful Ideas & Emerging Results Track" en="Insightful Ideas & Emerging Results Track">
+                    </lb>
                 </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" [routerLink]="RoutePaths.sblp.toUrl()">Home SBLP</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" [routerLink]="RoutePaths.sblpkeynote.toUrl()">Keynotes</a>
-                    <!-- <a class="dropdown-item" [routerLink]="RoutePaths.sblpprogramcommittee.toUrl()">Program
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" [routerLink]="RoutePaths.sbesInsightfulideastrack.toUrl()">Home</a>
+                    </li>
+                    <li><a class="dropdown-item"
+                            [routerLink]="RoutePaths.sbesInsightfulideastrackacceptedpapers.toUrl()">
+                            <lb pt="Artigos Aceitos" en="Accepted Papers"></lb>
+                        </a></li>
+                </ul>
+            </li>
+
+            <!-- <a class="dropdown-item" [routerLink]="RoutePaths.sbeseducationtrack.toUrl()">Education Track</a> -->
+
+            <!-- #################################### SUBMENU #################################### -->
+            <li class="dropdown-submenu">
+                <a class="dropdown-item dropdown-toggle">
+                    <lb pt="Education Track" en="Education Track"></lb>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" [routerLink]="RoutePaths.sbeseducationtrack.toUrl()">Home</a></li>
+                    <li><a class="dropdown-item" [routerLink]="RoutePaths.sbeseducationtrackacceptedpapers.toUrl()">
+                            <lb pt="Artigos Aceitos" en="Accepted Papers"></lb>
+                        </a></li>
+                </ul>
+            </li>
+
+            <a class="dropdown-item" [routerLink]="RoutePaths.sbeskeynotes.toUrl()">Keynotes</a>
+            <!-- <a class="dropdown-item" [routerLink]="RoutePaths.sbestopicsinterest.toUrl()">Topics Interest</a> -->
+            <!-- <a class="dropdown-item" [routerLink]="RoutePaths.sbesrevieweraward.toUrl()">Best Reviewer Award</a> -->
+            <!-- <a class="dropdown-item" [routerLink]="RoutePaths.sbesbestpaper.toUrl()">Best Paper Award</a> -->
+            <!-- <a class="dropdown-item" [routerLink]="RoutePaths.sbespapercategories.toUrl()">Paper Categories</a> -->
+            <!-- <a class="dropdown-item" [routerLink]="RoutePaths.sbesmanuscript.toUrl()">Manuscript Preparation Double Blind Review And Submission</a> -->
+            <!-- <a class="dropdown-item" [routerLink]="RoutePaths.sbesdoubleblindsubmission.toUrl()">Double-Blind Submission</a> -->
+            <!-- <a class="dropdown-item" [routerLink]="RoutePaths.sbesmentoringprogram.toUrl()">Mentoring Program</a> -->
+
+    </div>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="false" aria-expanded="false">
+            <font style="color: red; font-weight: bold;">XXIII</font> SBLP
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" [routerLink]="RoutePaths.sblp.toUrl()">Home SBLP</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" [routerLink]="RoutePaths.sblpacceptedpapers.toUrl()">
+                <lb pt="Artigos Aceitos" en="Accepted Papers"></lb>
+            </a>
+            <a class="dropdown-item" [routerLink]="RoutePaths.sblpkeynote.toUrl()">Keynotes</a>
+            <!-- <a class="dropdown-item" [routerLink]="RoutePaths.sblpprogramcommittee.toUrl()">Program
                         Committee</a> -->
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    <font style="color: red; font-weight: bold;">XIII</font> SBCARS
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" [routerLink]="RoutePaths.sbcars.toUrl()">Home SBCARS</a>
-                    <div class="dropdown-divider"></div>
-                    <!-- <a class="dropdown-item" href="#">Best Paper Award and Special Issue</a> -->
-                    <!-- <a class="dropdown-item" href="#">Call for Papers</a> -->
-                    <a class="dropdown-item" [routerLink]="RoutePaths.sbcarskeynotes.toUrl()">Keynote Speakers</a>
-                    <!-- <a class="dropdown-item" href="#">Schedule</a> -->
-                    <!-- <a class="dropdown-item" href="#">Organization</a> -->
-                    <!-- <a class="dropdown-item" href="#">SBCARS - Program Committee</a> -->
-                    <!-- <a class="dropdown-item" href="#">Contact</a> -->
-                </div>
-            </li>
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    <font style="color: red; font-weight: bold;">IV</font> SAST
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" [routerLink]="RoutePaths.sast.toUrl()">Home SAST</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" [routerLink]="RoutePaths.sastkeynotes.toUrl()">Keynote Speakers</a>
-                </div>
-            </li>
+        </div>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <font style="color: red; font-weight: bold;">XIII</font> SBCARS
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" [routerLink]="RoutePaths.sbcars.toUrl()">Home SBCARS</a>
+            <div class="dropdown-divider"></div>
 
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    <font style="color: red; font-weight: bold;">W</font>orkshops
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" [routerLink]="RoutePaths.workshops.toUrl()">Home Workshops</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" target="_blank" href="https://vem2019.github.io/">VEM 2019</a>
-                    <a class="dropdown-item" target="_blank" href="http://inf.ufg.br/mssis/">I MSSiS</a>
-                    <a class="dropdown-item" target="_blank" href="https://bware2019.github.io/">BWARE’19</a>
-                </div>
-            </li>
+            <a class="dropdown-item" [routerLink]="RoutePaths.sbcarsacceptedpapers.toUrl()">
+                <lb pt="Artigos Aceitos" en="Accepted Papers"></lb>
+            </a>
 
-            <!-- <li class="nav-item dropdown">
+            <!-- <a class="dropdown-item" href="#">Best Paper Award and Special Issue</a> -->
+            <!-- <a class="dropdown-item" href="#">Call for Papers</a> -->
+            <a class="dropdown-item" [routerLink]="RoutePaths.sbcarskeynotes.toUrl()">Keynote Speakers</a>
+            <!-- <a class="dropdown-item" href="#">Schedule</a> -->
+            <!-- <a class="dropdown-item" href="#">Organization</a> -->
+            <!-- <a class="dropdown-item" href="#">SBCARS - Program Committee</a> -->
+            <!-- <a class="dropdown-item" href="#">Contact</a> -->
+        </div>
+    </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <font style="color: red; font-weight: bold;">IV</font> SAST
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" [routerLink]="RoutePaths.sast.toUrl()">Home SAST</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" [routerLink]="RoutePaths.sastacceptedpapers.toUrl()">
+                <lb pt="Artigos Aceitos" en="Accepted Papers"></lb>
+            </a>
+            <a class="dropdown-item" [routerLink]="RoutePaths.sastkeynotes.toUrl()">Keynote Speakers</a>
+        </div>
+    </li>
+
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <font style="color: red; font-weight: bold;">W</font>orkshops
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" [routerLink]="RoutePaths.workshops.toUrl()">Home Workshops</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" target="_blank" href="https://vem2019.github.io/">VEM 2019</a>
+            <a class="dropdown-item" target="_blank" href="http://inf.ufg.br/mssis/">I MSSiS</a>
+            <a class="dropdown-item" target="_blank" href="https://bware2019.github.io/">BWARE’19</a>
+        </div>
+    </li>
+
+    <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
                     aria-haspopup="true" aria-expanded="false">
                     Workshops
@@ -281,47 +296,47 @@
                 </div>
             </li> -->
 
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
-                    aria-haspopup="true" aria-expanded="false">
-                    <lb pt="Local do Evento" en="Venue & Location"></lb>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <a class="dropdown-item" [routerLink]="RoutePaths.venuelocation.toUrl()">
-                        <lb pt="Mapa" en="Map"></lb>
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" [routerLink]="RoutePaths.accommodations.toUrl()">
-                        <lb pt="Acomodações" en="Accommodations"></lb>
-                    </a>
-                    <a class="dropdown-item" [routerLink]="RoutePaths.partnerrestaurants.toUrl()">
-                        <lb pt="Restaurantes Parceiros" en="Partner Restaurants"></lb>
-                    </a>
-                    <a class="dropdown-item" [routerLink]="RoutePaths.aboutsalvador.toUrl()">
-                        <lb pt="Sobre Salvador" en="About Salvador"></lb>
-                    </a>
-                    <a class="dropdown-item" [routerLink]="RoutePaths.tourism.toUrl()">
-                        <lb pt="Turismo em Salvador" en="Tourism in Salvador"></lb>
-                    </a>
-                    <a class="dropdown-item" [routerLink]="RoutePaths.travelagency.toUrl()">
-                        <lb pt="Agência de Turismo" en="Travel Agency"></lb>
-                    </a>
-                </div>
-            </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            <lb pt="Local do Evento" en="Venue & Location"></lb>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" [routerLink]="RoutePaths.venuelocation.toUrl()">
+                <lb pt="Mapa" en="Map"></lb>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" [routerLink]="RoutePaths.accommodations.toUrl()">
+                <lb pt="Acomodações" en="Accommodations"></lb>
+            </a>
+            <a class="dropdown-item" [routerLink]="RoutePaths.partnerrestaurants.toUrl()">
+                <lb pt="Restaurantes Parceiros" en="Partner Restaurants"></lb>
+            </a>
+            <a class="dropdown-item" [routerLink]="RoutePaths.aboutsalvador.toUrl()">
+                <lb pt="Sobre Salvador" en="About Salvador"></lb>
+            </a>
+            <a class="dropdown-item" [routerLink]="RoutePaths.tourism.toUrl()">
+                <lb pt="Turismo em Salvador" en="Tourism in Salvador"></lb>
+            </a>
+            <a class="dropdown-item" [routerLink]="RoutePaths.travelagency.toUrl()">
+                <lb pt="Agência de Turismo" en="Travel Agency"></lb>
+            </a>
+        </div>
+    </li>
 
 
-            <!-- <li class="nav-item">
+    <!-- <li class="nav-item">
                 <a class="nav-link" [routerLink]="RoutePaths.conferencebanquet.toUrl()">
                     <lb pt="Banquete de Conferências" en="Conference Banquet"></lb>
                 </a>
             </li> -->
-            <li class="nav-item">
-                <a class="btn btn-danger btn-xs" style="width: 110px;height: 40px;"
-                    [routerLink]="RoutePaths.registration.toUrl()" role="button">
-                    <lb pt="Inscrições" en="Registration"></lb>
-                </a>
-            </li>
-        </ul>
+    <li class="nav-item">
+        <a class="btn btn-danger btn-xs" style="width: 110px;height: 40px;"
+            [routerLink]="RoutePaths.registration.toUrl()" role="button">
+            <lb pt="Inscrições" en="Registration"></lb>
+        </a>
+    </li>
+    </ul>
     </div>
 
     <img (click)="mudarIdioma()" src="{{img}}" style="height: 23px;width: 38px;position:absolute; top: 28%; right: 1%;">
