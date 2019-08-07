@@ -36,4 +36,12 @@ class OrganizationComponent{
       return "Supporter";
     }
   }
+
+  get sponsor {
+    if(language == "pt"){
+      return "Patrocinador";
+    }else{
+      return "Sponsor";
+    }
+  }
 }
