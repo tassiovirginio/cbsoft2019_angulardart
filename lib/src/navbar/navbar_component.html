@@ -64,9 +64,20 @@
                     <a class="dropdown-item" [routerLink]="RoutePaths.conferenceproceedings.toUrl()">
                         <lb pt="Anais da Conferência" en="Conference Proceedings"></lb>
                     </a>
-                    <a class="dropdown-item" [routerLink]="RoutePaths.industrytrack.toUrl()">
-                        <lb pt="Trilha Industrial" en="Industry Track"></lb>
-                    </a>
+                    
+                    <!-- #################################### SUBMENU #################################### -->
+                    <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle">
+                            <lb pt="Trilha Industrial" en="Industry Track"></lb>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" [routerLink]="RoutePaths.industrytrack.toUrl()">Home</a></li>
+                            <li><a class="dropdown-item" [routerLink]="RoutePaths.industrytrackacceptedpapers.toUrl()">
+                                    <lb pt="Talks e Experiências" en="Experience reports / Talks"></lb>
+                                </a></li>
+                        </ul>
+                    </li>
+
                     <a class="dropdown-item" [routerLink]="RoutePaths.tutorials.toUrl()">
                         <lb pt="Tutoriais" en="Tutorials"></lb>
                     </a>
@@ -90,19 +101,6 @@
                             <li><a class="dropdown-item" [routerLink]="RoutePaths.toolssessionacceptedpapers.toUrl()">
                                     <lb pt="Artigos Aceitos" en="Accepted Papers"></lb>
                                 </a></li>
-
-                            <!-- <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Submenu 1</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Subsubmenu1</a></li>
-                                    <li><a class="dropdown-item" href="#">Subsubmenu1</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown-submenu"><a class="dropdown-item dropdown-toggle" href="#">Submenu 2</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Subsubmenu2</a></li>
-                                    <li><a class="dropdown-item" href="#">Subsubmenu2</a></li>
-                                </ul>
-                            </li> -->
                         </ul>
                     </li>
 

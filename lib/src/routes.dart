@@ -17,8 +17,13 @@ import 'package:cbsoft/cbsoft/conferenceproceedings.template.dart'
     as conferenceproceedings_template;
 import 'package:cbsoft/cbsoft/conferenceprogram.template.dart'
     as conferenceprogram_template;
+
 import 'package:cbsoft/cbsoft/industrytrack.template.dart'
     as industrytrack_template;
+
+import 'package:cbsoft/cbsoft/industrytrackacceptedpapers.template.dart'
+    as industrytrackacceptedpapers_template;    
+
 import 'package:cbsoft/cbsoft/previouseditions.template.dart'
     as previouseditions_template;
 import 'package:cbsoft/cbsoft/promotionalmaterial.template.dart'
@@ -306,6 +311,12 @@ class Routes {
     routePath: RoutePaths.industrytrack,
     component: industrytrack_template.IndustrytrackNgFactory,
   );
+  static final industrytrackacceptedpapers = RouteDefinition(
+    routePath: RoutePaths.industrytrackacceptedpapers,
+    component: industrytrackacceptedpapers_template.IndustrytrackacceptedpapersNgFactory,
+  );
+
+
 
   static final previouseditions = RouteDefinition(
     routePath: RoutePaths.previouseditions,
@@ -385,6 +396,7 @@ class Routes {
     conferenceproceedings,
     conferenceprogram,
     industrytrack,
+    industrytrackacceptedpapers,
     previouseditions,
     promotionalmaterial,
     shortcourses,

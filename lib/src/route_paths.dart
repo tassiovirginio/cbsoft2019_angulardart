@@ -25,6 +25,8 @@ class RoutePaths {
   static final conferenceproceedings = RoutePath(path: 'conferenceproceedings');
   static final conferenceprogram = RoutePath(path: 'conferenceprogram');
   static final industrytrack = RoutePath(path: 'industrytrack');
+  static final industrytrackacceptedpapers = RoutePath(path: 'industrytrackacceptedpapers');
+  
   static final previouseditions = RoutePath(path: 'previouseditions');
   static final promotionalmaterial = RoutePath(path: 'promotionalmaterial');
 
