@@ -34,7 +34,8 @@
                 <tr>
                     <td>9:00 </td>
                     <td>9:30</td>
-                    <td (click)="mdSAST1.show()" colspan="3" rowspan="3" style="cursor: pointer;background-color: cornflowerblue;">
+                    <td (click)="mdSAST1.show()" colspan="3" rowspan="3"
+                        style="cursor: pointer;background-color: cornflowerblue;">
                         <!-- <div class="btn btn-light btn-sm" (click)="mdSAST1.show()">SAST PALESTRA 1</div><br> -->
                         <bs-modal style="text-align: left;" #mdSAST1 header="SAST PALESTRA 1">
                             .........
@@ -69,14 +70,16 @@
                     <td>11:00 </td>
                     <td>11:30</td>
 
-                    <td (click)="modalSAST_ST_01.show()" colspan="1" rowspan="3" style="cursor: pointer;background-color: greenyellow;">
+                    <td (click)="modalSAST_ST_01.show()" colspan="1" rowspan="3"
+                        style="cursor: pointer;background-color: greenyellow;">
                         <b>SAST ST #1</b><br>
                         <bs-modal style="text-align: left;" #modalSAST_ST_01 header="SAST ST #1">
                             11:00 - 11:30<br>
                             Abertura<br>
                             <br>
                             11:30 - 12:00<br>
-                            Reusing Test Cases on Graph Product Line Variants: Results from State-of-the-Practice Tools<br>
+                            Reusing Test Cases on Graph Product Line Variants: Results from State-of-the-Practice
+                            Tools<br>
                             <br>
                             12:00 - 12:30<br>
                             What is the adoption level of automated support for testing in open-source ecosystems?”<br>
@@ -159,10 +162,12 @@
                     <td>14:00 </td>
                     <td>14:30</td>
 
-                    <td (click)="modalSAST_ST_02.show()" colspan="1" rowspan="4" style="cursor: pointer;background-color: greenyellow;">
+                    <td (click)="modalSAST_ST_02.show()" colspan="1" rowspan="4"
+                        style="cursor: pointer;background-color: greenyellow;">
                         <b>SAST ST #2</b><br>
                         <bs-modal style="text-align: left;" #modalSAST_ST_02 header="SAST ST #2">
-                            14:00 - 14:30<br>Singularity: A methodology for automatic unit test data generation for C++ applications based on Model Checking counterexamples<br>
+                            14:00 - 14:30<br>Singularity: A methodology for automatic unit test data generation for C++
+                            applications based on Model Checking counterexamples<br>
                             14:30 - 15:00<br>On the Exploratory Testing of Mobile Apps<br>
                             15:00 - 15:30<br>
                             15:30 - 16:00<br>SAST Meeting<br>
@@ -371,11 +376,14 @@
                     <td>11:00 </td>
                     <td>11:30</td>
 
-                    <td (click)="modalSAST_ST_03.show()" colspan="1" rowspan="3" style="cursor: pointer;background-color: greenyellow;">
+                    <td (click)="modalSAST_ST_03.show()" colspan="1" rowspan="3"
+                        style="cursor: pointer;background-color: greenyellow;">
                         <b>SAST ST #3</b><br>
                         <bs-modal style="text-align: left;" #modalSAST_ST_03 header="SAST ST #3">
-                            11:00 - 11:30<br>SeleCTT: An Infrastructure for Selection of Concurrent Software Testing Techniques<br>
-                            11:30 - 12:00<br>Software Testing Applied to Internet of Things:A Systematic Mapping Study<br>
+                            11:00 - 11:30<br>SeleCTT: An Infrastructure for Selection of Concurrent Software Testing
+                            Techniques<br>
+                            11:30 - 12:00<br>Software Testing Applied to Internet of Things:A Systematic Mapping
+                            Study<br>
                             12:00 - 12:30<br>
                             <br>
                         </bs-modal>
@@ -417,10 +425,26 @@
                     <td colspan="1" rowspan="3" style="background-color:salmon;">
                         <b>MINICURSO 3</b>
                     </td>
-                    <td colspan="1" rowspan="3" style="background-color:palegreen;">
-                        TRILHA DA INDÚSTRIA<br>
-                        ST #1
+
+
+                    <td (click)="modalINDUSTRIA_ST_01.show()" colspan="1" rowspan="3"
+                        style="background-color: palegreen;cursor: pointer;">
+                        TRILHA DA INDÚSTRIA ST #1<br>
+                        Opening - Talks
+                        <bs-modal style="text-align: left;" #modalINDUSTRIA_ST_01 header="INDUSTRIA ST #1">
+                            <b>Opening</b><br>
+                            11:00 - 11:05 Manoel Mendonça (Chair Trilha da Indústria)<br>
+                            <br>
+                            <b>Talks</b><br>
+                            11:05 - 11:35 Iniciativa em PDI do Softex Brasil<br>
+                            Rubens Delgado (Presidente do Softex)<br>
+                            <br>
+                            11:35 - 12:30 Melhoria de Processo de Teste Brasileiro (MPT.BR)<br>
+                            Ivaldir Junior (UPE)<br>
+                        </bs-modal>
                     </td>
+
+
                     <td></td>
                     <td></td>
                 </tr>
@@ -455,12 +479,15 @@
                     <td>14:00 </td>
                     <td>14:30</td>
 
-                    <td (click)="modalSAST_ST_04.show()" colspan="1" rowspan="4" style="cursor: pointer;background-color: greenyellow;">
+                    <td (click)="modalSAST_ST_04.show()" colspan="1" rowspan="4"
+                        style="cursor: pointer;background-color: greenyellow;">
                         <b>SAST ST #4</b><br>
                         <bs-modal style="text-align: left;" #modalSAST_ST_04 header="SAST ST #4">
                             14:00 - 14:30<br>Assessing Android Test Data Generation Tools via Mutation Testing<br>
-                            14:30 - 15:00<br>Analyzing the effectiveness of One-Of Mutation against the minimal set of mutants<br>
-                            15:00 - 15:30<br>An Evaluation of Internal Program Metrics as Predictors of Mutation Operator Score<br>
+                            14:30 - 15:00<br>Analyzing the effectiveness of One-Of Mutation against the minimal set of
+                            mutants<br>
+                            15:00 - 15:30<br>An Evaluation of Internal Program Metrics as Predictors of Mutation
+                            Operator Score<br>
                             15:30 - 16:00<br>
                             <br>
                         </bs-modal>
@@ -514,10 +541,40 @@
                     <td colspan="1" rowspan="4" style="background-color:salmon;">
                         <b>MINICURSO 3</b>
                     </td>
-                    <td colspan="1" rowspan="4" style="background-color:palegreen;">
-                        TRILHA DA INDÚSTRIA<br>
-                        ST #2
+
+                    <td (click)="modalINDUSTRIA_ST_02.show()" colspan="1" rowspan="4"
+                        style="background-color: palegreen;cursor: pointer;">
+                        TRILHA DA INDÚSTRIA ST #2<br>
+                        Experience Report, Talks, Closing
+                        <bs-modal style="text-align: left;" #modalINDUSTRIA_ST_02 header="INDUSTRIA ST #2">
+                            <b>Experience Report</b><br>
+                            <br>
+                            14:00 - 14:20 Análise de Risco no Processo de Reengenharia de Software<br>
+                            Guilherme de Moraes (UnB), Edgard Oliveira (UnB)<br>
+                            <br>
+                            14:20 - 14-40 Testes de Aceitação para Verificação de Entregas de Parceiros<br>
+                            Gizelle Lemos (Samsung Research & Development Institute Brazil), Tatiana Borghi (Samsung
+                            Research & Development Institute Brazil), Paula Póvoas (Samsung Research & Development
+                            Institute Brazil)<br>
+                            <br>
+                            14:40 - 15:00 Repensando Papéis em Equipes Ágeis: Um Estudo de Caso no Uso de uma Abordagem
+                            Combinada de Desenvolvimento Ágil, User-Centered Design e Lean Startup<br>
+                            Larissa Salerno (PUCRS), Ingrid Signoretti (PUCRS), Sabrina Marczak (PUCRS), Ricardo Bastos
+                            (PUCRS)<br>
+                            <br>
+                            15:00 - 15:20 Evolução Arquitetural em Sistemas de Controle de Satélites<br>
+                            Adair Rohling (UTFPR), Valdemar Vicente Graciano Neto (UFG), Elisa Nakagawa (USP), Mauricio
+                            Gonçalves (INPE) <br>
+                            <br>
+                            <b>Talks</b><br>
+                            15:20 - 15:50 Aplicação da Abordagem Ágil REACT para a Melhoria do Processo de
+                            Desenvolvimento de Requisitos: O Caso da W3AS<br>
+                            <br>
+                            <b>Closing</b><br>
+                            15:50 - 16:00 Manoel Mendonça (Chair Trilha da Indústria)<br>
+                        </bs-modal>
                     </td>
+
                     <td></td>
                     <td></td>
                 </tr>
