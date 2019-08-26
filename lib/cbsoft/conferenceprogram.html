@@ -68,11 +68,22 @@
                 <tr>
                     <td>11:00 </td>
                     <td>11:30</td>
-                    <td colspan="1" rowspan="3" style="background-color:greenyellow;">
-                        <b>SAST</b><br>
-                        ST #1
+
+                    <td (click)="modalSAST_ST_01.show()" colspan="1" rowspan="3" style="background-color: greenyellow;">
+                        <b>SAST ST #1</b><br>
+                        <bs-modal style="text-align: left;" #modalSAST_ST_01 header="SAST ST #1">
+                            11:00 - 11:30<br>
+                            Abertura<br>
+                            <br>
+                            11:30 - 12:00<br>
+                            Reusing Test Cases on Graph Product Line Variants: Results from State-of-the-Practice Tools<br>
+                            <br>
+                            12:00 - 12:30<br>
+                            What is the adoption level of automated support for testing in open-source ecosystems?”<br>
+                            <br>
+                        </bs-modal>
                     </td>
-                    
+
                     <td (click)="modalSBCARS_ST_01.show()" colspan="1" rowspan="4"
                         style="background-color: cornflowerblue;">
                         <b>SBCARS ST #1</b><br>
@@ -84,15 +95,16 @@
                             Welcome to SBCARS 2019<br>
                             Leopoldo Teixeira (Universidade Federal de Pernambuco)<br>
                             <br>
-                            An Architecture for Dynamic Web Services that Integrates Adaptive Object Models to Existing Frameworks<br>
-                            Antonio Dias (Instituto Nacional de Pesquisas Espaciais), 
-                            Eduardo Guerra (Instituto Nacional de Pesquisas Espaciais), 
+                            An Architecture for Dynamic Web Services that Integrates Adaptive Object Models to Existing
+                            Frameworks<br>
+                            Antonio Dias (Instituto Nacional de Pesquisas Espaciais),
+                            Eduardo Guerra (Instituto Nacional de Pesquisas Espaciais),
                             Phyllipe Lima (Instituto Nacional de Pesquisas Espaciais)<br>
                             <br>
                             Architectural Strategies for Interoperability<br>
-                            Pedro Henrique Dias Valle (Universidade de São Paulo), 
-                            Lina Garcés  (Universidade de São Paulo), 
-                            Elisa Yumi Nakagawa  (Universidade de São Paulo)<br>
+                            Pedro Henrique Dias Valle (Universidade de São Paulo),
+                            Lina Garcés (Universidade de São Paulo),
+                            Elisa Yumi Nakagawa (Universidade de São Paulo)<br>
                             <br>
                         </bs-modal>
                     </td>
@@ -146,35 +158,42 @@
                 <tr>
                     <td>14:00 </td>
                     <td>14:30</td>
-                    <td colspan="1" rowspan="4" style="background-color:greenyellow;">
-                        <b>SAST</b><br>
-                        ST #2
+
+                    <td (click)="modalSAST_ST_02.show()" colspan="1" rowspan="4" style="background-color: greenyellow;">
+                        <b>SAST ST #2</b><br>
+                        <bs-modal style="text-align: left;" #modalSAST_ST_02 header="SAST ST #2">
+                            14:00 - 14:30<br>Singularity: A methodology for automatic unit test data generation for C++ applications based on Model Checking counterexamples<br>
+                            14:30 - 15:00<br>On the Exploratory Testing of Mobile Apps<br>
+                            15:00 - 15:30<br>
+                            15:30 - 16:00<br>SAST Meeting<br>
+                            <br>
+                        </bs-modal>
                     </td>
 
                     <td (click)="modalSBCARS_ST_02.show()" colspan="1" rowspan="4"
                         style="background-color: cornflowerblue;">
                         <b>SBCARS ST #2</b><br>
                         Software Evolution
-                        <bs-modal style="text-align: left;" #modalSBCARS_ST_02
-                            header="SBCARS ST #2">
+                        <bs-modal style="text-align: left;" #modalSBCARS_ST_02 header="SBCARS ST #2">
                             14:00 - 16:00 - SOFTWARE EVOLUTION
                             <br>
                             Analysis of Coupling Evolution on Open Source Systems<br>
-                            Bruno Sousa (Universidade Federal de Minas Gerais), 
-                            Mariza Bigonha (Universidade Federal de Minas Gerais), 
-                            Kecia Ferreira  (Instituto Federal de Minas Gerais)<br>
+                            Bruno Sousa (Universidade Federal de Minas Gerais),
+                            Mariza Bigonha (Universidade Federal de Minas Gerais),
+                            Kecia Ferreira (Instituto Federal de Minas Gerais)<br>
                             <br>
                             Detecting Design Violations in Django-based Web Applications<br>
-                            Renieri Correia (Universidade Federal do Rio Grande do Norte), 
+                            Renieri Correia (Universidade Federal do Rio Grande do Norte),
                             Eiji Adachi Barbosa (Universidade Federal do Rio Grande do Norte)<br>
                             <br>
-                            Implementing a Classic ER Algebra to Automatically Generate Complex Queries for Document-Oriented Databases<br>
-                            Viviana Noguera (Universidade Federal de São Carlos), 
+                            Implementing a Classic ER Algebra to Automatically Generate Complex Queries for
+                            Document-Oriented Databases<br>
+                            Viviana Noguera (Universidade Federal de São Carlos),
                             Daniel Lucrédio (Universidade Federal de São Carlos)<br>
                             <br>
                             Improving the prediction of files changed by programming tasks<br>
-                            João Pedro Santos (Universidade Federal de Pernambuco), 
-                            Thais Rocha (Universidade Federal de Pernambuco), 
+                            João Pedro Santos (Universidade Federal de Pernambuco),
+                            Thais Rocha (Universidade Federal de Pernambuco),
                             Paulo Borba (Universidade Federal de Pernambuco)<br>
                             <br>
                         </bs-modal>
@@ -351,33 +370,39 @@
                 <tr>
                     <td>11:00 </td>
                     <td>11:30</td>
-                    <td colspan="1" rowspan="3" style="background-color:greenyellow;">
-                        <b>SAST</b><br>
-                        ST #3
+
+                    <td (click)="modalSAST_ST_03.show()" colspan="1" rowspan="3" style="background-color: greenyellow;">
+                        <b>SAST ST #3</b><br>
+                        <bs-modal style="text-align: left;" #modalSAST_ST_03 header="SAST ST #3">
+                            11:00 - 11:30<br>SeleCTT: An Infrastructure for Selection of Concurrent Software Testing Techniques<br>
+                            11:30 - 12:00<br>Software Testing Applied to Internet of Things:A Systematic Mapping Study<br>
+                            12:00 - 12:30<br>
+                            <br>
+                        </bs-modal>
                     </td>
-                    
-                    
+
+
                     <td (click)="modalSBCARS_ST_03.show()" colspan="1" rowspan="4"
                         style="background-color: cornflowerblue;">
                         <b>SBCARS ST #3</b><br>
                         Code Smells and Design Patterns
-                        <bs-modal style="text-align: left;" #modalSBCARS_ST_03
-                            header="SBCARS ST #3">
+                        <bs-modal style="text-align: left;" #modalSBCARS_ST_03 header="SBCARS ST #3">
                             11:00 - 12:30 - CODE SMELLS AND DESIGN PATTERNS<br>
                             <br>
                             An approach to detect false design patterns<br>
-                            Natan Severo (Instituto Federal da Paraíba), 
-                            Ricardo Job  (Instituto Federal da Paraíba)<br>
+                            Natan Severo (Instituto Federal da Paraíba),
+                            Ricardo Job (Instituto Federal da Paraíba)<br>
                             <br>
                             Incidence of code smells in the application of design patterns: a method-level analysis<br>
-                            Ederson Assunção (Universidade Federal da Bahia), 
-                            Rodrigo Souza  (Universidade Federal da Bahia)<br>
+                            Ederson Assunção (Universidade Federal da Bahia),
+                            Rodrigo Souza (Universidade Federal da Bahia)<br>
                             <br>
-                            On the Prioritization of Design-Relevant Smelly Elements: A Mixed-Method, Multi-Project Study<br>
+                            On the Prioritization of Design-Relevant Smelly Elements: A Mixed-Method, Multi-Project
+                            Study<br>
                             Anderson Oliveira (PUC-Rio),
-                            Leonardo Da Silva Sousa  (PUC-Rio), 
-                            Willian Oizumi  (PUC-Rio), 
-                            Alessandro Garcia  (PUC-Rio)<br>
+                            Leonardo Da Silva Sousa (PUC-Rio),
+                            Willian Oizumi (PUC-Rio),
+                            Alessandro Garcia (PUC-Rio)<br>
                             <br>
                         </bs-modal>
                     </td>
@@ -433,41 +458,50 @@
                         <b>SAST</b><br>
                         ST #4
                     </td>
-                    
-                    
+
+                    <td (click)="modalSAST_ST_04.show()" colspan="1" rowspan="4" style="background-color: greenyellow;">
+                        <b>SAST ST #4</b><br>
+                        <bs-modal style="text-align: left;" #modalSAST_ST_04 header="SAST ST #4">
+                            14:00 - 14:30<br>Assessing Android Test Data Generation Tools via Mutation Testing<br>
+                            14:30 - 15:00<br>Analyzing the effectiveness of One-Of Mutation against the minimal set of mutants<br>
+                            15:00 - 15:30<br>An Evaluation of Internal Program Metrics as Predictors of Mutation Operator Score<br>
+                            15:30 - 16:00<br>
+                            <br>
+                        </bs-modal>
+                    </td>
+
                     <td (click)="modalSBCARS_ST_04.show()" colspan="1" rowspan="4"
                         style="background-color: cornflowerblue;">
                         <b>SBCARS ST #4</b><br>
                         Service Architectures
-                        <bs-modal style="text-align: left;" #modalSBCARS_ST_04
-                            header="SBCARS ST #4">
+                        <bs-modal style="text-align: left;" #modalSBCARS_ST_04 header="SBCARS ST #4">
                             14:00 - 16:00 - SERVICE ARCHITECTURES<br>
                             <br>
                             A microservice based architecture to support offloading in Mobile Cloud Computing<br>
-                            Adriano Cândido (Universidade Federal do Ceará), 
-                            Fernando Trinta (Universidade Federal do Ceará), 
-                            Paulo Rego (Universidade Federal do Ceará), 
-                            Nabor Mendonça (Universidade de Fortaleza), 
-                            Vinícius Garcia (Universidade Federal de Pernambuco), 
+                            Adriano Cândido (Universidade Federal do Ceará),
+                            Fernando Trinta (Universidade Federal do Ceará),
+                            Paulo Rego (Universidade Federal do Ceará),
+                            Nabor Mendonça (Universidade de Fortaleza),
+                            Vinícius Garcia (Universidade Federal de Pernambuco),
                             Lincoln Rocha (Universidade Federal do Ceará)<br>
                             <br>
                             Geological Data Access on a Polyglot Database using a Service Architecture<br>
-                            Leonardo Azevedo (IBM), 
-                            Rodrigo Ferreira (IBM), 
-                            Viviane Torres (IBM), 
-                            Raphael Thiago (IBM), 
-                            Elton Soares (IBM), 
+                            Leonardo Azevedo (IBM),
+                            Rodrigo Ferreira (IBM),
+                            Viviane Torres (IBM),
+                            Raphael Thiago (IBM),
+                            Elton Soares (IBM),
                             Maximilien de Bayser (IBM)<br>
                             <br>
                             Microservice-oriented Product Line Architecture Design: An Exploratory Study<br>
                             Ana Claudia Lima Costa (Universidade Estadual de Maringá),
-                            Anderson Marcolino (Universidade de São Paulo), 
-                            Thelma Colanzi (Universidade Estadual de Maringá), 
+                            Anderson Marcolino (Universidade de São Paulo),
+                            Thelma Colanzi (Universidade Estadual de Maringá),
                             Ellen Francine Barbosa (Universidade de São Paulo)<br>
                             <br>
                             REST or GraphQL? A Performance Comparative Study<br>
-                            Matheus Seabra (Universidade Federal do Pará), 
-                            Marcos Felipe Carvalho Nazário (Instituto Evandro Chagas), 
+                            Matheus Seabra (Universidade Federal do Pará),
+                            Marcos Felipe Carvalho Nazário (Instituto Evandro Chagas),
                             Gustavo Pinto (Universidade Federal do Pará)<br>
                             <br>
                         </bs-modal>
@@ -739,7 +773,8 @@
                             (Universidade Salvador/UNIFACS), Miguel Pessoa Monteiro (Universidade Nova de Lisboa /UNL),
                             Fernando Brito e Abreu (Instituto Universitario de Lisboa /ISCTE-IUL)<br><br>
 
-                            14:52 - 15:05 <span class="badge badge-pill badge-success" style="background-color: rgb(114, 11, 114);">Tools Session</span>
+                            14:52 - 15:05 <span class="badge badge-pill badge-success"
+                                style="background-color: rgb(114, 11, 114);">Tools Session</span>
                             <br>
                             <b>
                                 ValiDEPlan - Validity-Driven Software Engineering Experiments Planning Tool<br>
@@ -998,7 +1033,8 @@
                             <br><br>
 
                             11:22 - 11:35
-                            <span class="badge badge-pill badge-success" style="background-color: rgb(114, 11, 114);">Tools Session</span>
+                            <span class="badge badge-pill badge-success"
+                                style="background-color: rgb(114, 11, 114);">Tools Session</span>
                             <br>
                             <b>
                                 Convalida: a Code Generation-based Field Validation Library for Android Applications
@@ -1021,7 +1057,7 @@
                             Santos da Gama (CIn-UFPE), Fernando José Castor de Lima Filho (CIn-UFPE)
                             <br><br>
 
-                            11:57 - 12:17 
+                            11:57 - 12:17
                             <span class="badge badge-pill badge-info">Insightful Track</span>
                             <br>
                             <b>
@@ -1035,7 +1071,8 @@
                             <br><br>
 
                             12:17 - 12:30
-                            <span class="badge badge-pill badge-success" style="background-color: rgb(114, 11, 114);">Tools Session</span>
+                            <span class="badge badge-pill badge-success"
+                                style="background-color: rgb(114, 11, 114);">Tools Session</span>
                             <br>
                             <b>
                                 Kubow: Um Serviço de Autoadaptação Baseada em Arquitetura para Aplicações Nativas da
@@ -1269,7 +1306,8 @@
                             <br><br>
 
                             15:15 - 15:28
-                            <span class="badge badge-pill badge-success" style="background-color: rgb(114, 11, 114);">Tools Session</span>
+                            <span class="badge badge-pill badge-success"
+                                style="background-color: rgb(114, 11, 114);">Tools Session</span>
                             <br>
                             <b>
                                 Dependency Rank: Método de priorização de requisitos baseado nas relações de dependência
@@ -1293,7 +1331,8 @@
                             <br><br>
 
                             15:48 - 16:01
-                            <span class="badge badge-pill badge-success" style="background-color: rgb(114, 11, 114);">Tools Session</span>
+                            <span class="badge badge-pill badge-success"
+                                style="background-color: rgb(114, 11, 114);">Tools Session</span>
                             <br>
                             <b>
                                 PCM Tool: Privacy Requirements Specification in Agile Software Development
@@ -1996,7 +2035,8 @@
                             <b>
                                 On the influence of Test Smells on Test Coverage<br>
                             </b>
-                            Tassio Virginio (UFBA), Railana Santana (UFBA), Luana Martins (UFLA), Ivan Machado (UFBA), Heitor Costa (UFLA), Larissa Rocha Soares (UFBA)
+                            Tassio Virginio (UFBA), Railana Santana (UFBA), Luana Martins (UFLA), Ivan Machado (UFBA),
+                            Heitor Costa (UFLA), Larissa Rocha Soares (UFBA)
                             <br><br>
 
                             14:57 - 15:10
@@ -2004,7 +2044,8 @@
                             <span class="badge badge-pill badge-warning">Short Paper</span>
                             <br>
                             <b>
-                                Documentation Technical Debt - A Qualitative Study in a Software Development Organization
+                                Documentation Technical Debt - A Qualitative Study in a Software Development
+                                Organization
                             </b>
                             <br>
                             Leonardo Mendes (UNIRIO), Cristina Cerdeiral (UNIRIO), Gleison Santos (UNIRIO)
@@ -2040,7 +2081,8 @@
                             <br><br>
 
                             15:43 - 15:56
-                            <span class="badge badge-pill badge-success" style="background-color: rgb(114, 11, 114);">Tools Session</span>
+                            <span class="badge badge-pill badge-success"
+                                style="background-color: rgb(114, 11, 114);">Tools Session</span>
                             <br>
                             <b>
                                 Attribute Sniffer: Collecting Attribute Metrics for C# Code
@@ -2081,7 +2123,8 @@
                             <br><br>
 
                             14:42 - 14:55
-                            <span class="badge badge-pill badge-success" style="background-color: rgb(114, 11, 114);">Tools Session</span>
+                            <span class="badge badge-pill badge-success"
+                                style="background-color: rgb(114, 11, 114);">Tools Session</span>
                             <br>
                             <b>
                                 Ferramenta de controle de acesso baseado em gamificação
@@ -2094,7 +2137,8 @@
                             <br><br>
 
                             14:55 - 15:08
-                            <span class="badge badge-pill badge-success" style="background-color: rgb(114, 11, 114);">Tools Session</span>
+                            <span class="badge badge-pill badge-success"
+                                style="background-color: rgb(114, 11, 114);">Tools Session</span>
                             <br>
                             <b>
                                 A Tool for Automation of Knowledge Management Diagnostics in Software Development
@@ -2135,7 +2179,8 @@
                             <br><br>
 
                             15:50 - 16:03
-                            <span class="badge badge-pill badge-success" style="background-color: rgb(114, 11, 114);">Tools Session</span>
+                            <span class="badge badge-pill badge-success"
+                                style="background-color: rgb(114, 11, 114);">Tools Session</span>
                             <br>
                             <b>
                                 SPLiME: A Tool for Software Product Lines Maintainability Evaluation
