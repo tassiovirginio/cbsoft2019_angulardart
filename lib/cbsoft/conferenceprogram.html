@@ -722,10 +722,9 @@
                     <td colspan="1" rowspan="3" style="background-color:khaki;">
                         TUTORIAL 3<br>
                         <b>
-                            Studying Human and Social Aspects in Software Engineering Research
+                            What Makes Organizations Intelligent?<br>
                         </b>
-                        <br>
-                        Margaret-Anne Storey
+                        James Herbsleb
                     </td>
                     <td colspan="1" rowspan="3" style="background-color:salmon;">MINICURSO 4</td>
                     <td colspan="1" rowspan="3" style="background-color:rgb(152, 250, 114);">MSSiS WORKSHOP <br> ST #1
@@ -759,10 +758,9 @@
                     <td colspan="1" rowspan="3" style="background-color:khaki;">
                         TUTORIAL 3<br>
                         <b>
-                            Studying Human and Social Aspects in Software Engineering Research
+                            What Makes Organizations Intelligent?<br>
                         </b>
-                        <br>
-                        Margaret-Anne Storey
+                        James Herbsleb
                     </td>
                     <td colspan="1" rowspan="3" style="background-color:salmon;">MINICURSO 4</td>
                     <td colspan="1" rowspan="3" style="background-color:rgb(152, 250, 114);">MSSiS WORKSHOP <br> ST #2
@@ -901,8 +899,8 @@
                     <td>17:00</td>
                     <td colspan="3" rowspan="3" style="background-color: cornflowerblue;">
                         SBES PALESTRA 1<br>
-                        James D. Herbsleb<br>
-                        Carnegie Mellon University<br>
+                        Margaret-Anne Storey<br>
+                        University of Victoria, Canada
                     </td>
                     <td></td>
                     <td colspan="1" rowspan="3" style="background-color:rgb(152, 250, 114);">MSSiS WORKSHOP <br> ST #4
@@ -1278,17 +1276,33 @@
                         </bs-modal>
                     </td>
 
+                    
                     <td colspan="1" rowspan="3" style="background-color:khaki;">
                         TUTORIAL 4<br>
                         <b>
-                            What Makes Organizations Intelligent?<br>
+                            Studying Human and Social Aspects in Software Engineering Research
                         </b>
-                        James Herbsleb
+                        <br>
+                        Margaret-Anne Storey
                     </td>
-                    <td colspan="1" rowspan="3" style="background-color:plum;">
-                        SBLP<br>
-                        ST #1
+                    
+                    
+                    <td (click)="modalSBLP_ST_01.show()" colspan="1" rowspan="3" style="background-color: plum;cursor: pointer;">
+                        <b>SBLP ST #1</b><br>
+                        Types and verification
+                        <bs-modal style="text-align: left;" #modalSBLP_ST_01 header="SBLP ST #1: Types and verification">
+                            11:00 - 11:30<br>
+                            1. Structure verification of deep neural networks at compilation time using dependent types<br>
+                            <br>
+                            11:30 - 12:00<br>
+                            2. An Inherently-Typed Formalization for Featherweight Java<br>
+                            <br>
+                            12:00 - 12:30<br>
+                            3. Towards Typed Semantics for Parsing Expression Grammars<br>
+                        </bs-modal>
                     </td>
+
+
                     <td colspan="1" rowspan="3" style="background-color:lightgreen;">
                         TOOL DEMO<br>
                         ST #1
@@ -1675,14 +1689,30 @@
                     <td colspan="1" rowspan="4" style="background-color:khaki;">
                         TUTORIAL 4<br>
                         <b>
-                            What Makes Organizations Intelligent?<br>
+                            Studying Human and Social Aspects in Software Engineering Research
                         </b>
-                        James Herbsleb
+                        <br>
+                        Margaret-Anne Storey
                     </td>
-                    <td colspan="1" rowspan="4" style="background-color:plum;">
-                        SBLP<br>
-                        ST #2
+                    <td (click)="modalSBLP_ST_02.show()" colspan="1" rowspan="4" style="background-color: plum;cursor: pointer;">
+                        <b>SBLP ST #2</b><br>
+                        Code Analysis, Profiling and Transactional Memory
+                        <bs-modal style="text-align: left;" #modalSBLP_ST_02 header="SBLP ST #2: Code Analysis, Profiling and Transactional Memory">
+                            14:00 - 14:30<br>
+                            1. Construção Eficiente e Precisa de Grafos de Fluxo de Controle Dinâmicos<br>
+                            <br>
+                            14:30 - 15:00<br>
+                            2. Síntese de Benchmarks em C via Mineração de Repositórios<br>
+                            <br>
+                            15:00 - 15:30<br>
+                            3. Profiling Halide DSL with CPU Performance Events for Schedule Optimization<br>
+                            <br>
+                            15:30 - 16:00<br>
+                            4. Transformation System formalism for Software Transactional Memory Opacity<br>
+                        </bs-modal>
                     </td>
+
+
                     <td colspan="1" rowspan="4" style="background-color:lightgreen;">
                         TOOL DEMO<br>
                         ST #2
@@ -1712,8 +1742,8 @@
                     <td>17:00</td>
                     <td colspan="3" rowspan="3" style="background-color: cornflowerblue;">
                         SBES PALESTRA 2<br>
-                        Margaret-Anne Storey<br>
-                        University of Victoria, Canada
+                        James D. Herbsleb<br>
+                        Carnegie Mellon University<br>
                     </td>
                     <td></td>
                     <td></td>
@@ -2016,9 +2046,19 @@
                         </bs-modal>
                     </td>
 
-                    <td colspan="1" rowspan="3" style="background-color: rgb(167, 80, 248);">
-                        SBLP<br>
-                        ST #3
+                    <td (click)="modalSBLP_ST_03.show()" colspan="1" rowspan="3" style="background-color: plum;cursor: pointer;">
+                        <b>SBLP ST #3</b><br>
+                        Streams and DSLs
+                        <bs-modal style="text-align: left;" #modalSBLP_ST_03 header="SBLP ST #3: Streams and DSLs">
+                            11:00 - 11:30<br>
+                            1. IML - An Image Manipulation Language<br>
+                            <br>
+                            11:30 - 12:00<br>
+                            2. Structured Stream Parallelism for Rust<br>
+                            <br>
+                            12:00 - 12:30<br>
+                            3. Java Stream Fusion: Adapting FP mechanisms for an OO setting<br>
+                        </bs-modal>
                     </td>
 
                     <td colspan="1" rowspan="3" style="background-color:khaki;">
