@@ -2,7 +2,7 @@ import 'package:angular/angular.dart';
 
 @Component(selector: 'card', template: '''
                 <div class="card2 hovercard">
-                    <span style="font-weight: bold; writing-mode: vertical-rl;position: absolute;background-color: {{cor}}; color: {{corfont}}; top:0;rigth:0;">&nbsp;&nbsp;{{evento}}&nbsp;&nbsp;</span>
+                    <span style="font-weight: bold; writing-mode: vertical-rl;position: absolute;background-color: {{cor}}; color: {{corfont}}; top:0; left:0;">&nbsp;&nbsp;{{evento}}&nbsp;&nbsp;</span>
                     <div class="cardheader">
                     </div>
                     <div class="avatar">
