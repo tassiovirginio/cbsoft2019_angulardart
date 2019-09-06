@@ -34,3 +34,26 @@ body {
   text-decoration: underline;
   transform: rotate(-90deg);
 } 
+
+.table-programacao {
+  background-color: #F0F0F0;
+  background-image: url(assets/images/table_background.png);
+  /* opacity: 0.5; */
+  font-size: 12px;
+  align-content: center;
+  text-align: center; 
+  border: 1px solid black;
+  margin-top: 15px;
+  width: 100%;
+  text-align: center;
+  overflow:hidden;
+  border-collapse:separate;
+  -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+          border-radius: 15px;
+}
+
+.lista-salas{
+  background-image: linear-gradient(to bottom, #555555, black); 
+  color: white;
+}
