@@ -5,6 +5,8 @@ import 'package:cbsoft/src/route_paths.dart';
 import 'package:cbsoft/cbsoft/cbsoft.template.dart' as cbsoft_template;
 import 'package:cbsoft/cbsoft/committee.template.dart' as committee_template;
 
+import 'package:cbsoft/cbsoft/painel.template.dart' as painel_template;
+
 import 'package:cbsoft/cbsoft/conferencebanquet.template.dart'
     as conferencebanquet_template;
 import 'package:cbsoft/cbsoft/registration.template.dart'
@@ -118,6 +120,11 @@ class Routes {
   static final committee = RouteDefinition(
     routePath: RoutePaths.committee,
     component: committee_template.CommitteeNgFactory,
+  );
+
+  static final painel = RouteDefinition(
+    routePath: RoutePaths.painel,
+    component: painel_template.PainelNgFactory,
   );
 
 //--------- SBES ----------------------
@@ -357,6 +364,7 @@ class Routes {
   static final all = <RouteDefinition>[
     cbsoft,
     sbes,
+    painel,
     sbesresearchtrack,
     sbesresearchtrackacceptedpapers,
     sbesInsightfulideastrack,

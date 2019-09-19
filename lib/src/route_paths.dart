@@ -6,6 +6,8 @@ class RoutePaths {
   static final cbsoft = RoutePath(path: 'cbsoft');
   static final committee = RoutePath(path: 'committee');
 
+  static final painel = RoutePath(path: 'painel');
+
   static final sbcars = RoutePath(path: 'sbcars');
   static final sbcarsacceptedpapers = RoutePath(path: 'sbcarsacceptedpapers');
 
