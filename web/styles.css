@@ -57,3 +57,22 @@ body {
   background-image: linear-gradient(to bottom, #555555, black); 
   color: white;
 }
+
+a:link {
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: red;
+}
